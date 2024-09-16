@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-    <style>
-    /* Estilo para secciones ocultas por defecto */
-    .section-content {
+  <style>
+    .tab {
       display: none;
     }
-    .section-content.active {
+    .tab-content {
+      display: none;
+    }
+    .tab-content.active {
       display: block;
     }
   </style>
+  <title>Portfolio de Lucía Herrero</title>
 </head>
 <body>
 
@@ -18,19 +23,19 @@
     <h1>Portfolio de Lucía Herrero</h1>
     <nav>
       <ul>
-        <li><a href="#" data-target="about">Sobre mí</a></li>
-        <li><a href="#" data-target="projects">Proyectos</a></li>
-        <li><a href="#" data-target="skills">Habilidades</a></li>
+        <li><button class="tab-button" data-target="about">Sobre mí</button></li>
+        <li><button class="tab-button" data-target="projects">Proyectos</button></li>
+        <li><button class="tab-button" data-target="skills">Habilidades</button></li>
       </ul>
     </nav>
   </header>
 
-  <section id="about">
+  <section id="about" class="tab-content">
     <h2>Sobre mí</h2>
     <p>Hola, soy Lucía Herrero, una ingeniera industrial que ha encontrado una motivación extra en encontrar soluciones basadas en datos. Aquí encontrarás algunos de mis proyectos.</p>
   </section>
 
-  <section id="projects">
+  <section id="projects" class="tab-content">
     <h2>Proyectos</h2>
     <ul>
       <li><a href="https://github.com/tu-nombre-de-usuario/proyecto1">Análisis de datos de ventas</a></li>
@@ -39,7 +44,7 @@
     </ul>
   </section>
 
-  <section id="skills">
+  <section id="skills" class="tab-content">
     <h2>Habilidades</h2>
     <ul>
       <li>Python, R, SQL</li>
@@ -52,25 +57,32 @@
   <footer>
     <p>Contacto: herreroalvarezlucia@gmail.com | LinkedIn: <a href="https://linkedin.com/in/luciaherreroalv" style="color:white;">Lucía Herrero</a></p>
   </footer>
- <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const links = document.querySelectorAll('nav a');
-      const sections = document.querySelectorAll('.section-content');
 
-      links.forEach(link => {
-        link.addEventListener('click', function(event) {
-          event.preventDefault();
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const tabButtons = document.querySelectorAll('.tab-button');
+      const tabContents = document.querySelectorAll('.tab-content');
+
+      tabButtons.forEach(button => {
+        button.addEventListener('click', function() {
           const targetId = this.getAttribute('data-target');
 
-          sections.forEach(section => {
-            section.classList.remove('active');
+          tabContents.forEach(content => {
+            if (content.id === targetId) {
+              content.classList.add('active');
+            } else {
+              content.classList.remove('active');
+            }
           });
-
-          document.getElementById(targetId).classList.add('active');
         });
       });
+
+      // Optional: Show the first tab by default
+      if (tabContents.length > 0) {
+        tabContents[0].classList.add('active');
+      }
     });
   </script>
-  
+
 </body>
 </html>
