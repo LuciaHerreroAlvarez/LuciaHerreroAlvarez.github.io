@@ -21,6 +21,49 @@ section {
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+/* Estilo para el menú de pestañas */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.tab-button {
+  background-color: #8A2BE2; /* Color de fondo de las pestañas */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.tab-button:hover {
+  background-color: #6a1cb2; /* Color cuando se pasa el ratón */
+}
+
+.tab-button.active {
+  background-color: #4CAF50; /* Color para la pestaña activa */
+}
+
+.tab-content {
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del pie de página */
 footer {
   background-color: #333;
   color: white;
@@ -30,6 +73,8 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
+/* Enlaces */
 a {
   color: #8A2BE2;
   text-decoration: none;
