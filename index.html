@@ -2,11 +2,27 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" href="styles.css">
+    <style>
+    /* Estilo para secciones ocultas por defecto */
+    .section-content {
+      display: none;
+    }
+    .section-content.active {
+      display: block;
+    }
+  </style>
 </head>
 <body>
 
   <header>
     <h1>Portfolio de Lucía Herrero</h1>
+    <nav>
+      <ul>
+        <li><a href="#" data-target="about">Sobre mí</a></li>
+        <li><a href="#" data-target="projects">Proyectos</a></li>
+        <li><a href="#" data-target="skills">Habilidades</a></li>
+      </ul>
+    </nav>
   </header>
 
   <section id="about">
@@ -36,6 +52,25 @@
   <footer>
     <p>Contacto: herreroalvarezlucia@gmail.com | LinkedIn: <a href="https://linkedin.com/in/luciaherreroalv" style="color:white;">Lucía Herrero</a></p>
   </footer>
+ <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const links = document.querySelectorAll('nav a');
+      const sections = document.querySelectorAll('.section-content');
 
+      links.forEach(link => {
+        link.addEventListener('click', function(event) {
+          event.preventDefault();
+          const targetId = this.getAttribute('data-target');
+
+          sections.forEach(section => {
+            section.classList.remove('active');
+          });
+
+          document.getElementById(targetId).classList.add('active');
+        });
+      });
+    });
+  </script>
+  
 </body>
 </html>
