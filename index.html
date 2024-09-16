@@ -58,31 +58,39 @@
     <p>Contacto: herreroalvarezlucia@gmail.com | LinkedIn: <a href="https://linkedin.com/in/luciaherreroalv" style="color:white;">Lucía Herrero</a></p>
   </footer>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const tabButtons = document.querySelectorAll('.tab-button');
-      const tabContents = document.querySelectorAll('.tab-content');
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const tabButtons = document.querySelectorAll('.tab-button');
+    const tabContents = document.querySelectorAll('.tab-content');
 
-      tabButtons.forEach(button => {
-        button.addEventListener('click', function() {
-          const targetId = this.getAttribute('data-target');
+    tabButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        const targetId = this.getAttribute('data-target');
 
-          tabContents.forEach(content => {
-            if (content.id === targetId) {
-              content.classList.add('active');
-            } else {
-              content.classList.remove('active');
-            }
-          });
+        // Quitar la clase 'active' de todos los botones
+        tabButtons.forEach(btn => btn.classList.remove('active'));
+
+        // Añadir la clase 'active' al botón actual
+        this.classList.add('active');
+
+        // Mostrar el contenido correspondiente
+        tabContents.forEach(content => {
+          if (content.id === targetId) {
+            content.classList.add('active');
+          } else {
+            content.classList.remove('active');
+          }
         });
       });
-
-      // Optional: Show the first tab by default
-      if (tabContents.length > 0) {
-        tabContents[0].classList.add('active');
-      }
     });
-  </script>
+
+    // Mostrar la primera pestaña por defecto
+    if (tabContents.length > 0) {
+      tabButtons[0].classList.add('active');
+      tabContents[0].classList.add('active');
+    }
+  });
+</script>
 
 </body>
 </html>
