@@ -107,6 +107,22 @@
       tabContents[0].classList.add('active');
     }
   });
+
+  // Botones de navegacion tipo sticky
+  document.addEventListener('DOMContentLoaded', function() {
+    const header = document.querySelector('header');
+    const nav = document.querySelector('nav');
+    const headerHeight = header.offsetHeight;
+    
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > headerHeight) {
+        nav.classList.add('sticky');
+      } else {
+        nav.classList.remove('sticky');
+      }
+    });
+  });
+
 </script>
 
 </body>
