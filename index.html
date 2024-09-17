@@ -75,12 +75,23 @@
     <p>Contacto: herreroalvarezlucia@gmail.com | LinkedIn: <a href="https://linkedin.com/in/luciaherreroalv" style="color:white;">Lucía Herrero</a></p>
   </footer>
 
+
+
+  
+   // JavaScript
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     const tabButtons = document.querySelectorAll('.tab-button');
     const tabContents = document.querySelectorAll('.tab-content');
     const header = document.querySelector('header');
-    
+
+    // Definir las imágenes de fondo para cada pestaña
+    const backgrounds = {
+      about: 'url(images/atardecer.jpg)',   // Imagen para la pestaña "Sobre mí"
+      projects: 'url(images/suculentas.jpg)', // Imagen para la pestaña "Proyectos"
+      skills: 'url(images/universo.jpg)'  // Imagen para la pestaña "Habilidades"
+    };
+
     tabButtons.forEach(button => {
       button.addEventListener('click', function() {
         const targetId = this.getAttribute('data-target');
@@ -99,15 +110,6 @@
             content.classList.remove('active');
           }
         });
-      });
-    });
-
-    // Definir las imágenes de fondo para cada pestaña
-    const backgrounds = {
-      about: 'url(images/atardecer.jpg)',   // Imagen para la pestaña "Sobre mí"
-      projects: 'url(images/suculentas.jpg)', // Imagen para la pestaña "Proyectos"
-      skills: 'url(images/universo.jpg)'  // Imagen para la pestaña "Habilidades"
-    };
 
         // Cambiar el fondo de la cabecera según la pestaña seleccionada
         header.style.backgroundImage = backgrounds[targetId];
