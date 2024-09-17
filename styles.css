@@ -17,6 +17,7 @@ header {
   text-align: center;
   padding: 1rem;
   padding-top: 50px; /* Ajuste para dar espacio al menú de navegación fijo */
+  transition: background-image 0.5s ease-in-out; /* Suaviza el cambio de fondo */
 }
 
 h1 {
