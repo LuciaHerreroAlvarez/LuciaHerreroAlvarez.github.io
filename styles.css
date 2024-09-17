@@ -6,7 +6,9 @@ body {
 }
 
 header {
-  background-color: #333;
+  display: flex;
+  background: url(images/atardecer.jpg) no-repeat center;
+  background-size: cover;
   color: white;
   text-align: center;
   padding: 1rem;
