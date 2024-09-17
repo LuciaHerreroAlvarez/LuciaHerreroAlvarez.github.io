@@ -32,6 +32,10 @@ section {
 }
 
 /* Estilo del menú de pestañas para que sea horizontal */
+nav {
+  position: relative; /* Asegura que la posición sea relativa */
+}
+
 nav ul {
   list-style: none; /* Elimina las viñetas */
   padding: 10px; /* Añadir padding para que los botones no queden pegados */
@@ -40,15 +44,19 @@ nav ul {
   display: flex; /* Alinea horizontalmente los botones */
   justify-content: center; /* Centra los botones horizontalmente */
   margin-bottom: 1rem;
+  position: absolute; /* Inicialmente en la parte inferior del encabezado */
+  bottom: 0; /* Ajusta al fondo del encabezado */
+  width: 100%;
+  transition: position 0.3s ease;
 }
 
-nav {
-  position: fixed; /* Fija la barra de navegación en la parte superior */
+nav.sticky ul {
+  position: fixed; /* Fijo en la parte superior cuando scrollea */
   top: 0;
-  width: 100%;
-  background-color: #f4f4f4; /* Fondo de la barra para que se vea sobre el contenido */
-  z-index: 1000; /* Para que quede sobre otros elementos */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Añadir sombra para distinguir la barra */
+  left: 0;
+  right: 0;
+  background-color: #fff; /* Fondo blanco para la franja fija */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacarlo */
 }
 
 nav ul li {
