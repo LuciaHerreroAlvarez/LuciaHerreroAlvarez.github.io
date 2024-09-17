@@ -15,6 +15,7 @@ header {
   color: white;
   text-align: center;
   padding: 1rem;
+  padding-top: 60px; /* Ajuste para dar espacio al menú de navegación fijo */
 }
 
 h1 {
@@ -33,12 +34,21 @@ section {
 /* Estilo del menú de pestañas para que sea horizontal */
 nav ul {
   list-style: none; /* Elimina las viñetas */
-  padding: 0;
+  padding: 10px; /* Añadir padding para que los botones no queden pegados */
   margin: 0;
   text-align: center;
   display: flex; /* Alinea horizontalmente los botones */
   justify-content: center; /* Centra los botones horizontalmente */
   margin-bottom: 1rem;
+}
+
+nav {
+  position: fixed; /* Fija la barra de navegación en la parte superior */
+  top: 0;
+  width: 100%;
+  background-color: #f4f4f4; /* Fondo de la barra para que se vea sobre el contenido */
+  z-index: 1000; /* Para que quede sobre otros elementos */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Añadir sombra para distinguir la barra */
 }
 
 nav ul li {
@@ -79,7 +89,6 @@ footer {
   color: white;
   text-align: center;
   padding: 1rem;
-  position: fixed;
   bottom: 0;
   width: 100%;
 }
