@@ -10,8 +10,9 @@ header {
   justify-content: center;
   align-items: center;
   height: 60vh;
-  background: url(images/atardecer.jpg) no-repeat center;
-  background-size: cover;
+  background-size: cover;  /* Asegura que la imagen de fondo cubra todo el área */
+  background-position: center; /* Centra la imagen de fondo */
+  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
   color: white;
   text-align: center;
   padding: 1rem;
