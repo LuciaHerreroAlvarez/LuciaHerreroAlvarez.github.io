@@ -7,6 +7,9 @@ body {
 
 header {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
   background: url(images/atardecer.jpg) no-repeat center;
   background-size: cover;
   color: white;
