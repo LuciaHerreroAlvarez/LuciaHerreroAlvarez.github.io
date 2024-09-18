@@ -38,10 +38,10 @@ nav {
   position: fixed; /* Fija la barra de navegación en la parte superior */
   top: 0;
   width: 100%;
-  background: linear-gradient(to bottom, rgba(54, 54, 54, 0.5), rgba(54, 54, 54, 0)); /* Fondo transparente al 50% y degradado,  Fondo de la barra para que se vea sobre el contenido */
+  background: linear-gradient(to bottom, rgba(54, 54, 54, 0.7), rgba(54, 54, 54, 0)); /* Fondo transparente al 50% y degradado,  Fondo de la barra para que se vea sobre el contenido */
   z-index: 1000; /* Para que quede sobre otros elementos */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Añadir sombra para distinguir la barra */
-  padding: 5px 0; /* Reducción de la altura */
+  padding: 2px 0; /* Reducción de la altura */
 }
 
 nav ul {
