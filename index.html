@@ -1,112 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <style>
-    .tab {
-      display: none;
-    }
-    .tab-content {
-      display: none;
-    }
-    .tab-content.active {
-      display: block;
-    }
-  </style>
   <title>Portfolio de Lucía Herrero</title>
 </head>
   
 <body>
 
   <header>
-    <h1>Portfolio de Lucía Herrero</h1>
+    <div class="overlay"></div> <!-- Overlay para el efecto degradado sobre la imagen -->
+    <h1>Lucía Herrero</h1>
+    <p>Ingeniera Industrial & Analista de Datos</p>
     <nav>
       <ul>
         <li><button class="tab-button" data-target="about">Sobre mí</button></li>
         <li><button class="tab-button" data-target="projects">Proyectos</button></li>
+        <li><button class="tab-button" data-target="experience">Experiencia</button></li>
         <li><button class="tab-button" data-target="skills">Habilidades</button></li>
       </ul>
     </nav>
   </header>
 
-  <section id="about" class="tab-content">
-    <h2>Introducción</h2>
-    <p>
-      Me llamo Lucía Herrero. He creado esta web para poder mostrar mi portfolio y para que, quien esté interesado,
-       pueda comprender un poco mejor mi trayectoria profesional y educativa, y mis habilidades.
-    </p>
-    <p>
-      En esta primera sección os hablaré de mí desde una perspectiva más humana y literaria, para quien quiera ver asomar a mi lado
-       más artístico. Y después, en las siguientes pestañas, os describiré de una manera más práctica mi recorrido, y os mostraré
-       mis primeros proyectos.
-    </p>
-    <p>
-      Si veis algún fallo en la web, no dudéis en decírmelo. Estos son mis primeros pinitos con la programación,
-       así que habrá un montón que mejorar. Espero que os guste!
-    </p>
-    
-    <h2>Sobre mí</h2>
-    <p>
-      7 de noviembre de 1997, Oviedo, Asturias. Amanece bajo un cielo frío y gris, como es costumbre. El aire,
-      impregnado de 10°C de melancolía, abraza la ciudad con la típica serenidad de un otoño asturiano.
-      No el clima idóneo para que un girasol crezca, pero sí es el escenario perfecto para la llegada de una niña que,
-       aunque nace en silencio, trae consigo una promesa: la de poner el mundo patas arriba.
-    </p>
-    <p>
-      Siempre he sido curiosa por naturaleza. Nunca me he conformado con saber cómo ocurren las cosas, sin buscar después un 
-      por qué. Quizás por eso el camino de las ciencias me parecía el más atractivo.
-    </p>
-    <p>
-      Con mis ganas insaciables de aprender y mi ambición por superarme constantemente, decidí estudiar ingeniería industrial a pesar
-      de las críticas que me encontraba sobre su dificultad (puede que incluso me motivasen más a hacerlo). Amé mi decisión durante los
-       4 años del Grado, ya que me sentía en mi salsa. Aquí no había lugar para "conocimientos por imposición". Todo llevaba a un 
-      complejo razonamiento lógico, que se integraba a la perfección con mi manera de pensar. Conseguí ser de las mejores estudiantes 
-      de la promoción, lo que me llevó a conseguir algunos reconocimientos de excelencia académica como varias matrículas de honor y una 
-      beca de colaboración con la Universidad de Oviedo.
-    </p>
-    <p>
-      Después continué mis estudios con el Máster Habilidante de Ingeniería Industrial, en la Universidad Politécnica de Madrid. El segundo
-       año lo cursé en Estocolmo, con el programa Erasmus (el mejor año de mi vida). Y al volver, supuestamente con todos los estudios 
-      terminados, me quedé en un limbo en el que brotaban dudas por todos lados. No tenía claro a qué quería dedicarme concretamente, y con 
-      mi primera experiencia profesional, comencé a plantearme si había merecido la pena estudiar una de las carreras más duras, e invertir
-       6 años de mi vida en ella, para acabar haciendo tareas que sabría hacer perfectamente cuando estaba en el instituto, con el mismo sueldo
-       de otra persona que ha empezado a trabajar sin estudios.
-    </p>
+  <!-- Sección sobre mí -->
+  <section id="about" class="tab-content active">
+    <div class="container">
+      <h2>Sobre mí</h2>
       <p>
-      Esta es una situación por la que, tristemente, estamos pasando muchos jóvenes en España. No se está valorando ni explotando nuestro talento.
-    </p>
-    <img src="images/abstracto.jpg" alt="" width="300px" height="100%">
+        Soy Lucía Herrero, una ingeniera industrial con pasión por el análisis de datos y la resolución de problemas complejos. Este espacio refleja mi trayectoria profesional y mis proyectos.
+      </p>
+      <p>
+        Mi formación técnica, unida a una curiosidad inagotable, me ha llevado a explorar diversas áreas de la ingeniería, el análisis de datos y la ciencia de datos.
+      </p>
+      <img src="images/perfil.jpg" alt="Lucía Herrero" class="profile-pic">
+    </div>
   </section>
 
+  <!-- Sección Proyectos -->
   <section id="projects" class="tab-content">
-    <h2>Proyectos</h2>
-    <ul>
-      <li><a href="https://github.com/tu-nombre-de-usuario/proyecto1">Análisis de datos de ventas</a></li>
-      <li><a href="https://github.com/tu-nombre-de-usuario/proyecto2">Predicción de la demanda con Machine Learning</a></li>
-      <li><a href="https://github.com/tu-nombre-de-usuario/proyecto3">Optimización de la cadena de suministro</a></li>
-    </ul>
+    <div class="container">
+      <h2>Proyectos Destacados</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="images/proyecto1.jpg" alt="Proyecto 1">
+          <h3>Análisis de Ventas</h3>
+          <p>Un análisis exhaustivo de ventas utilizando Python y SQL.</p>
+          <a href="https://github.com/tu-nombre-de-usuario/proyecto1" class="btn">Ver en GitHub</a>
+        </div>
+        <div class="project-card">
+          <img src="images/proyecto2.jpg" alt="Proyecto 2">
+          <h3>Predicción de Demanda</h3>
+          <p>Modelos de Machine Learning para predicciones precisas.</p>
+          <a href="https://github.com/tu-nombre-de-usuario/proyecto2" class="btn">Ver en GitHub</a>
+        </div>
+      </div>
+    </div>
   </section>
 
+  <!-- Sección Experiencia Profesional -->
+  <section id="experience" class="tab-content">
+    <div class="container">
+      <h2>Mi Recorrido Profesional</h2>
+      <div class="timeline">
+        <div class="timeline-event">
+          <h3>Ingeniera Industrial - Empresa ABC</h3>
+          <p><strong>2022 - Presente</strong></p>
+          <p>Descripción del trabajo realizado y los logros obtenidos en esta posición.</p>
+        </div>
+        <div class="timeline-event">
+          <h3>Beca de Investigación - Universidad de Oviedo</h3>
+          <p><strong>2020 - 2021</strong></p>
+          <p>Trabajo en proyectos de optimización y análisis de procesos industriales.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Habilidades -->
   <section id="skills" class="tab-content">
-    <h2>Habilidades</h2>
-    <ul>
-      <li>Python, R, SQL</li>
-      <li>Tableau, PowerBI</li>
-      <li>Machine Learning básico</li>
-      <li>Análisis de datos, visualización de datos</li>
-    </ul>
+    <div class="container">
+      <h2>Habilidades Técnicas</h2>
+      <ul class="skills-list">
+        <li>Python</li>
+        <li>R</li>
+        <li>SQL</li>
+        <li>PowerBI, Tableau</li>
+        <li>Machine Learning</li>
+      </ul>
+    </div>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>Contacto: herreroalvarezlucia@gmail.com | LinkedIn: <a href="https://linkedin.com/in/luciaherreroalv" style="color:white;">Lucía Herrero</a></p>
   </footer>
 
-
-<!-- JavaScript -->
+  <!-- JavaScript -->
   <script src="scripts.js"></script>
-
 </body>
 </html>
