@@ -1,4 +1,4 @@
-   // JavaScript
+  // Aquí va todo el código JavaScript
   document.addEventListener('DOMContentLoaded', function() {
     const tabButtons = document.querySelectorAll('.tab-button');
     const tabContents = document.querySelectorAll('.tab-content');
@@ -42,4 +42,3 @@
       header.style.backgroundImage = backgrounds['about']; // Imagen inicial
     }
   });
-
