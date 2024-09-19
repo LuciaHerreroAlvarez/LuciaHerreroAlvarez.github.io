@@ -12,11 +12,11 @@
       experience: 'url(images/suculentas.jpg)' // Añadir imagen para la pestaña "Experiencia"
     };
 
-    tabButtons.forEach(button => {
-      button.addEventListener('click', function() {
-        e.preventDefault(); // Prevenir comportamiento por defecto del enlace
-        
-        const targetId = this.getAttribute('data-target');
+  tabButtons.forEach(button => {
+    button.addEventListener('click', function(e) {  // Añadir 'e' aquí
+      e.preventDefault(); // Prevenir comportamiento por defecto del enlace
+
+      const targetId = this.getAttribute('data-target');
 
         // Quitar la clase 'active' de todos los botones
         tabButtons.forEach(btn => btn.classList.remove('active'));
