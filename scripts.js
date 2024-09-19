@@ -8,12 +8,14 @@
     const backgrounds = {
       about: 'url(images/atardecer.jpg)',   // Imagen para la pestaña "Sobre mí"
       projects: 'url(images/suculentas.jpg)', // Imagen para la pestaña "Proyectos"
-      skills: 'url(images/universo.jpg)'  // Imagen para la pestaña "Habilidades"
+      skills: 'url(images/universo.jpg)',  // Imagen para la pestaña "Habilidades"
       experience: 'url(images/suculentas.jpg)' // Añadir imagen para la pestaña "Experiencia"
     };
 
     tabButtons.forEach(button => {
       button.addEventListener('click', function() {
+        e.preventDefault(); // Prevenir comportamiento por defecto del enlace
+        
         const targetId = this.getAttribute('data-target');
 
         // Quitar la clase 'active' de todos los botones
