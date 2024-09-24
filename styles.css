@@ -209,7 +209,70 @@ nav ul li {
   transform: translateX(-50%);
 }
 
-/* Habilidades */
+/* Nueva sección de Habilidades estilo grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.skill-card {
+  background-color: #f1f1f1;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Fondo de colores diferentes para cada tarjeta */
+.skill-card:nth-child(1) {
+  background-color: #8A2BE2;
+}
+
+.skill-card:nth-child(2) {
+  background-color: #FF6347;
+}
+
+.skill-card:nth-child(3) {
+  background-color: #20B2AA;
+}
+
+.skill-card:nth-child(4) {
+  background-color: #FF4500;
+}
+
+.skill-card:nth-child(5) {
+  background-color: #4682B4;
+}
+
+.skill-card:nth-child(6) {
+  background-color: #32CD32;
+}
+
+.skill-card h3 {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.skill-card img {
+  width: 60px;
+  height: auto;
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
+
+.skill-card img:hover {
+  transform: scale(1.1);
+}
+
+/* Habilidades lista */
 .skills-list {
   display: flex;
   gap: 1.5rem;
