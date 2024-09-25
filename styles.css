@@ -130,11 +130,13 @@ nav ul li {
   background: url('images/girasolesotoño.jpg') no-repeat center center fixed;
   background-size: cover;
   text-align: center;
-  padding: 5rem 2rem; /* Añade espacio alrededor del texto */
+  padding: 5rem 0; /* Añadir padding solo arriba y abajo para dejar margen vertical */
   color: white;
   font-weight: bold;
   font-style: italic;
   z-index: 2; /* La ponemos por encima del fondo general */
+  width: 100vw; /* Ocupa el 100% del ancho de la pantalla */
+  margin-left: calc(-50vw + 50%); /* Alinear al borde izquierdo de la pantalla */
 }
 
 .literatura .overlay {
@@ -143,7 +145,7 @@ nav ul li {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Si quieres un overlay oscuro sobre la imagen */
+  background: rgba(0, 0, 0, 0.7); /* Si quieres un overlay oscuro sobre la imagen */
   z-index: 3; /* Para asegurarnos que el overlay esté sobre la imagen pero debajo del texto */
 }
 
