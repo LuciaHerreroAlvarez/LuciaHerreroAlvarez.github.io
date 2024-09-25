@@ -46,6 +46,10 @@ h1 {
   z-index: 3;
 }
 
+h2 {
+  margin-bottom: 1.5rem; /* Ajusta este valor según el espacio que desees */
+}
+
 p {
   margin-bottom: 1.5rem; /* Ajusta este valor para mayor o menor espacio entre párrafos */
 }
