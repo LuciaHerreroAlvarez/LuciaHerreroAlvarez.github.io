@@ -126,6 +126,7 @@ nav ul li {
 
 /* Estilo para la sección con fondo e imagen fija. La parte de literatura*/
 .literatura {
+  position: relative; /* Aseguramos que la sección se posicione para controlar las capas */
   background: url('img/girasolesotoño.jpg') no-repeat center center fixed;
   background-size: cover;
   text-align: center;
@@ -133,10 +134,24 @@ nav ul li {
   color: white;
   font-weight: bold;
   font-style: italic;
+  z-index: 2; /* La ponemos por encima del fondo general */
 }
+
+.literatura .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Si quieres un overlay oscuro sobre la imagen */
+  z-index: 3; /* Para asegurarnos que el overlay esté sobre la imagen pero debajo del texto */
+}
+
 
 /* Ajuste del contenedor de texto */
 .literatura .contain {
+  position: relative; /* El texto debe estar en una capa superior */
+  z-index: 4; /* Para asegurarnos de que el texto esté por encima de la imagen y el overlay */
   max-width: 800px; /* Limita el ancho máximo del texto */
   margin: 0 auto; /* Centra el contenido */
 }
@@ -145,6 +160,8 @@ nav ul li {
 .literatura p {
   font-size: 1.2rem; /* Ajusta el tamaño de la fuente */
   line-height: 1.8;  /* Mejora la legibilidad */
+  position: relative; /* Aseguramos que los párrafos estén en la capa correcta */
+  z-index: 4; /* El texto siempre debe estar visible sobre la imagen y el overlay */
 }
 
 /* Sección Proyectos */
