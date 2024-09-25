@@ -46,6 +46,10 @@ h1 {
   z-index: 3;
 }
 
+p {
+  margin-bottom: 1.5rem; /* Ajusta este valor para mayor o menor espacio entre párrafos */
+}
+
 header p {
   font-size: 1.2rem;
   z-index: 3;
