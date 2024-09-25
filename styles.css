@@ -117,7 +117,7 @@ nav ul li {
   border-radius: 50%;
   transition: transform 0.3s ease;
   float: right; /* Alinea la imagen a la derecha del texto */
-  margin: 1rem 0 1rem 1rem; /* Ajusta el margen para separarla del texto */
+  margin: 0 0 1rem 1rem; /* Ajusta el margen para separarla del texto */
 }
 
 .profile-pic:hover {
