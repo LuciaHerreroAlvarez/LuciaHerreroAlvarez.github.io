@@ -124,6 +124,29 @@ nav ul li {
   transform: scale(1.1);
 }
 
+/* Estilo para la sección con fondo e imagen fija. La parte de literatura*/
+.literatura {
+  background: url('img/girasolesotoño.jpg') no-repeat center center fixed;
+  background-size: cover;
+  text-align: center;
+  padding: 5rem 2rem; /* Añade espacio alrededor del texto */
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Ajuste del contenedor de texto */
+.literatura .contain {
+  max-width: 800px; /* Limita el ancho máximo del texto */
+  margin: 0 auto; /* Centra el contenido */
+}
+
+/* Estilo del párrafo */
+.literatura p {
+  font-size: 1.2rem; /* Ajusta el tamaño de la fuente */
+  line-height: 1.8;  /* Mejora la legibilidad */
+}
+
 /* Sección Proyectos */
 .projects-grid {
   display: flex;
