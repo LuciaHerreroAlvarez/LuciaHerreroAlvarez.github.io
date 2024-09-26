@@ -7,9 +7,9 @@
     // Definir las imágenes de fondo para cada pestaña
     const backgrounds = {
       about: 'url(images/suculentasmarron.jpg)',   // Imagen para la pestaña "Sobre mí"
-      projects: 'url(images/suculentas.jpg)', // Imagen para la pestaña "Proyectos"
-      skills: 'url(images/universo.jpg)',  // Imagen para la pestaña "Habilidades"
-      experience: 'url(images/suculentas.jpg)' // Añadir imagen para la pestaña "Experiencia"
+      projects: 'url(images/suculentasmarron.jpg)', // Imagen para la pestaña "Proyectos"
+      skills: 'url(images/suculentasmarron.jpg)',  // Imagen para la pestaña "Habilidades"
+      experience: 'url(images/suculentasmarron.jpg)' // Añadir imagen para la pestaña "Experiencia"
     };
 
   tabButtons.forEach(button => {
