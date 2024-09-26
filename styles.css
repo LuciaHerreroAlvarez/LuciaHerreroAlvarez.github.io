@@ -145,7 +145,7 @@ nav ul li {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7); /* Si quieres un overlay oscuro sobre la imagen */
+  background: rgba(0, 0, 0, 0.5); /* Si quieres un overlay oscuro sobre la imagen */
   z-index: 3; /* Para asegurarnos que el overlay esté sobre la imagen pero debajo del texto */
 }
 
