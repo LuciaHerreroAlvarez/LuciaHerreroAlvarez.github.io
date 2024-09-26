@@ -127,7 +127,7 @@ nav ul li {
 /* Estilo para la sección con fondo e imagen fija. La parte de literatura*/
 .literatura {
   position: relative; /* Aseguramos que la sección se posicione para controlar las capas */
-  background: url('images/girasolmacro.jpg') no-repeat center center fixed;
+  background: url('images/nubes.jpg') no-repeat center center fixed;
   background-size: cover;
   text-align: center;
   color: white;
