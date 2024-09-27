@@ -140,7 +140,7 @@ nav ul li {
   z-index: 2; /* La ponemos por encima del fondo general */
   width: 100vw; /* Ocupa el 100% del ancho de la pantalla */
   margin-left: calc(-50vw + 50%); /* Alinear al borde izquierdo de la pantalla */
-  min-height: 300px; /* Ajusta la altura mínima según sea necesario */
+  min-height: 500px; /* Ajusta la altura mínima según sea necesario */
 }
 
 .literatura .overlay {
