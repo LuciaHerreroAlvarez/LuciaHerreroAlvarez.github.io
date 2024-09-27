@@ -39,6 +39,15 @@ header .overlay {
   pointer-events: none; /* El overlay no bloquea los clics */
 }
 
+/* Logo en el header */
+.logo-header {
+  position: fixed;
+  top: 20px;   /* Ajusta el valor según lo que necesites */
+  left: 20px;  /* Ajusta el valor según lo que necesites */
+  width: 50px; /* Tamaño del logo, ajusta según sea necesario */
+  z-index: 3; /* Coloca el logo sobre el overlay */
+}
+
 h1 {
   font-size: 4rem;
   font-weight: bold;
@@ -352,4 +361,13 @@ footer {
   color: white;
   text-align: center;
   padding: 1rem 0;
+}
+
+/* Logo en el footer */
+.logo-footer {
+  position: absolute;
+  left: 20px;  /* Pegado a la izquierda */
+  top: 50%;    /* Para centrar verticalmente */
+  transform: translateY(-50%);  /* Centrado vertical usando transform */
+  width: 50px; /* Tamaño del logo, ajusta según sea necesario */
 }
