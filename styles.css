@@ -50,6 +50,10 @@ h2 {
   margin-bottom: 1.5rem; /* Ajusta este valor según el espacio que desees */
 }
 
+.titulo-sobre-mi {
+  margin-top: 50px; /* Ajusta este valor según el espacio superior que necesites */
+}
+
 p {
   margin-bottom: 1.5rem; /* Ajusta este valor para mayor o menor espacio entre párrafos */
 }
