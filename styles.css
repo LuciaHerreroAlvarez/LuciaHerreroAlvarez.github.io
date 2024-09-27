@@ -132,15 +132,17 @@ nav ul li {
 /* Estilo para la sección con fondo e imagen fija. La parte de literatura*/
 .literatura {
   position: relative; /* Aseguramos que la sección se posicione para controlar las capas */
+  display: flex; /* Activamos flexbox */
+  justify-content: center; /* Centra horizontalmente el contenido */
+  align-items: center; /* Centra verticalmente el contenido */
   background: url('images/nubes2.jpg') no-repeat center center fixed;
   background-size: cover;
-  text-align: center;
   color: white;
   font-style: italic;
   z-index: 2; /* La ponemos por encima del fondo general */
   width: 100vw; /* Ocupa el 100% del ancho de la pantalla */
   margin-left: calc(-50vw + 50%); /* Alinear al borde izquierdo de la pantalla */
-  min-height: 500px; /* Ajusta la altura mínima según sea necesario */
+  min-height: 400px; /* Ajusta la altura mínima según sea necesario */
 }
 
 .literatura .overlay {
@@ -158,9 +160,9 @@ nav ul li {
 .literatura .contain {
   position: relative; /* El texto debe estar en una capa superior */
   z-index: 4; /* Para asegurarnos de que el texto esté por encima de la imagen y el overlay */
-  max-width: 800px; /* Limita el ancho máximo del texto */
-  margin: 0 auto; /* Centra el contenido */
-  padding: 5rem 0; /* Añadir padding solo arriba y abajo para dejar margen vertical */
+  max-width: 1200px; /* Limita el ancho máximo del texto */
+  text-align: center;
+  padding: 0 5rem; /* Añade padding horizontal para dar espacio a los lados */
 }
 
 /* Estilo del párrafo */
