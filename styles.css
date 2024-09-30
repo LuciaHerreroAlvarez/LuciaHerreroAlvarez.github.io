@@ -237,6 +237,7 @@ nav ul li {
   margin-top: 2rem;
 }
 
+/* Línea del timeline */
 .timeline::before {
   content: '';
   position: absolute;
@@ -248,6 +249,7 @@ nav ul li {
   margin-left: -2px;
 }
 
+/* Eventos del timeline */
 .timeline-event {
   position: relative;
   padding: 1rem 2rem;
@@ -255,6 +257,7 @@ nav ul li {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 2rem;
+  margin-left: 80px; /* Se incrementa el margen para que se despeje de la línea y los puntos */
 }
 
 .timeline-event h3 {
@@ -265,6 +268,7 @@ nav ul li {
   margin-bottom: 0;
 }
 
+/* Puntos de la línea de tiempo */
 .timeline-event::before {
   content: '';
   position: absolute;
@@ -276,6 +280,7 @@ nav ul li {
   left: 50px;
   transform: translateX(-50%);
 }
+
 
 /* Nueva sección de Habilidades estilo grid */
 .skills-grid {
