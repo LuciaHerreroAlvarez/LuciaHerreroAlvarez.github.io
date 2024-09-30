@@ -300,27 +300,27 @@ nav ul li {
 
 /* Fondo de colores diferentes para cada tarjeta */
 .skill-card:nth-child(1) {
-  background-color: #fff;
+  background-color: #900C3F;
 }
 
 .skill-card:nth-child(2) {
-  background-color: #fff;
+  background-color: #C70039;
 }
 
 .skill-card:nth-child(3) {
-  background-color: #fff;
+  background-color: #FF5733;
 }
 
 .skill-card:nth-child(4) {
-  background-color: #fff;
+  background-color: #af3162 ;
 }
 
 .skill-card:nth-child(5) {
-  background-color: #fff;
+  background-color: #e73f6f;
 }
 
 .skill-card:nth-child(6) {
-  background-color: #fff;
+  background-color: #ff7e62;
 }
 
 .skill-card h3 {
