@@ -291,10 +291,9 @@ nav ul li {
 }
 
 .skill-card {
-  background-color: white; /* Fondo blanco para la tarjeta y los iconos */
+  background-color: white;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  padding: 0 1.5rem 1.5rem; /* Eliminado padding superior */
   text-align: center;
   transition: transform 0.3s ease;
 }
@@ -308,6 +307,7 @@ nav ul li {
   padding: 1rem;
   color: white;
   border-radius: 15px 15px 0 0;
+  margin: 0; /* Asegúrate de que no haya margen lateral */
 }
 
 /* Fondo de colores diferentes para cada título */
@@ -335,11 +335,9 @@ nav ul li {
   background-color: #ff7e62;
 }
 
-/* Título de la tarjeta */
-.skill-card h3 {
-  color: white; /* El título ahora es blanco porque el fondo del header es oscuro */
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+/* Contenido de la tarjeta (iconos y padding general) */
+.skill-content {
+  padding: 1.5rem; /* Espacio dentro de la tarjeta, pero debajo del título */
 }
 
 /* Iconos */
