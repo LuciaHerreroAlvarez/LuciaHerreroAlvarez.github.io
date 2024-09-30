@@ -41,10 +41,10 @@ header .overlay {
 
 /* Logo en el header */
 .logo-header {
-  position: fixed;
-  top: 20px;   /* Ajusta el valor según lo que necesites */
-  left: 20px;  /* Ajusta el valor según lo que necesites */
-  width: 50px; /* Tamaño del logo, ajusta según sea necesario */
+  position: absolute;
+  top: 40px;   /* Ajusta el valor según lo que necesites */
+  left: 40px;  /* Ajusta el valor según lo que necesites */
+  width: 70px; /* Tamaño del logo, ajusta según sea necesario */
   z-index: 3; /* Coloca el logo sobre el overlay */
 }
 
@@ -370,4 +370,5 @@ footer {
   top: 50%;    /* Para centrar verticalmente */
   transform: translateY(-50%);  /* Centrado vertical usando transform */
   width: 50px; /* Tamaño del logo, ajusta según sea necesario */
+  z-index: 1; /* Coloca el logo sobre el fondo */
 }
