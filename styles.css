@@ -365,8 +365,8 @@ footer {
 
 /* Logo en el footer */
 .logo-footer {
-  position: absolute;
-  left: 20px;  /* Pegado a la izquierda */
+  position: relative;
+  left: 40px;  /* Pegado a la izquierda */
   top: 50%;    /* Para centrar verticalmente */
   transform: translateY(-50%);  /* Centrado vertical usando transform */
   width: 50px; /* Tamaño del logo, ajusta según sea necesario */
