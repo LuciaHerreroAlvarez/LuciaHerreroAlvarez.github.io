@@ -357,18 +357,24 @@ nav ul li {
 
 /* Footer */
 footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 1rem 0;
+  display: flex;                   /* Usamos flexbox para el layout */
+  align-items: center;            /* Centra verticalmente los elementos */
+  justify-content: space-between;  /* Espacia el logo y el texto */
+  background-color: #333;         /* Color de fondo */
+  color: white;                   /* Color del texto */
+  padding: 1rem 40px;            /* Espacio alrededor del contenido */
 }
 
 /* Logo en el footer */
 .logo-footer {
-  position: relative;
-  left: 40px;  /* Pegado a la izquierda */
-  top: 50%;    /* Para centrar verticalmente */
-  transform: translateY(-50%);  /* Centrado vertical usando transform */
-  width: 50px; /* Tamaño del logo, ajusta según sea necesario */
-  z-index: 1; /* Coloca el logo sobre el fondo */
+  width: 50px;                   /* Tamaño del logo */
+  margin-right: 10px;            /* Espacio entre el logo y el texto */
+  /* Se queda pegado a la izquierda sin usar 'left' o 'top' */
+}
+
+/* Estilo del texto del footer */
+footer p {
+  margin: 0;                     /* Elimina el margen del párrafo */
+  flex-grow: 1;                  /* Permite que el texto use el espacio restante */
+  text-align: center;            /* Centra el texto horizontalmente */
 }
