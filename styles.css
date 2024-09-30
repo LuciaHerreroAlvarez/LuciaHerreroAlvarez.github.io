@@ -286,10 +286,10 @@ nav ul li {
 }
 
 .skill-card {
-  background-color: #f1f1f1;
+  background-color: white; /* Fondo blanco para la tarjeta y los iconos */
   border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 0 1.5rem 1.5rem; /* Eliminado padding superior */
   text-align: center;
   transition: transform 0.3s ease;
 }
@@ -298,37 +298,46 @@ nav ul li {
   transform: translateY(-10px);
 }
 
-/* Fondo de colores diferentes para cada tarjeta */
-.skill-card:nth-child(1) {
+/* Nueva clase para el encabezado (título) */
+.skill-header {
+  padding: 1rem;
+  color: white;
+  border-radius: 15px 15px 0 0;
+}
+
+/* Fondo de colores diferentes para cada título */
+.skill-card:nth-child(1) .skill-header {
   background-color: #900C3F;
 }
 
-.skill-card:nth-child(2) {
+.skill-card:nth-child(2) .skill-header {
   background-color: #C70039;
 }
 
-.skill-card:nth-child(3) {
+.skill-card:nth-child(3) .skill-header {
   background-color: #FF5733;
 }
 
-.skill-card:nth-child(4) {
-  background-color: #af3162 ;
+.skill-card:nth-child(4) .skill-header {
+  background-color: #af3162;
 }
 
-.skill-card:nth-child(5) {
+.skill-card:nth-child(5) .skill-header {
   background-color: #e73f6f;
 }
 
-.skill-card:nth-child(6) {
+.skill-card:nth-child(6) .skill-header {
   background-color: #ff7e62;
 }
 
+/* Título de la tarjeta */
 .skill-card h3 {
-  color: black;
+  color: white; /* El título ahora es blanco porque el fondo del header es oscuro */
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
+/* Iconos */
 .skill-card img {
   width: 60px;
   height: auto;
