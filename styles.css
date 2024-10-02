@@ -342,8 +342,8 @@ nav ul li {
 
 /* Iconos */
 .skill-card img {
-  width: 60px;
-  height: auto;
+  height: 80px;
+  width: auto; 
   margin: 10px;
   transition: transform 0.3s ease;
 }
