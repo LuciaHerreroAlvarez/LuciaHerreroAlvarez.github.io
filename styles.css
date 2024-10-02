@@ -249,6 +249,19 @@ nav ul li {
   margin-left: -2px; /* Ajuste para centrar la línea */
 }
 
+/* Puntos de la línea de tiempo */
+.timeline-event::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #995fa8;
+  top: 20px; /* Ajusta la posición vertical del punto */
+  left: 50px; /* Alinea el punto con la línea */
+  transform: translateX(-50%); /* Asegura que el punto esté centrado en la línea */
+}
+
 /* Eventos del timeline */
 .timeline-event {
   position: relative;
@@ -290,19 +303,6 @@ nav ul li {
   background: #f9f9f9;
   border-left: 4px solid #995fa8;
   border-radius: 4px;
-}
-
-/* Puntos de la línea de tiempo */
-.timeline-event::before {
-  content: '';
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: #995fa8;
-  top: 20px; /* Ajusta la posición vertical del punto */
-  left: 50px; /* Alinea el punto con la línea */
-  transform: translateX(-50%); /* Asegura que el punto esté centrado en la línea */
 }
 
 /* Mensaje informativo */
