@@ -126,24 +126,35 @@
     </div>
   </section>
 
-  <!-- Sección Experiencia Profesional -->
-  <section id="experience" class="tab-content">
-    <div class="container">
-      <h2>Mi Recorrido Profesional</h2>
-      <div class="timeline">
-        <div class="timeline-event">
+  
+<!-- Sección Experiencia Profesional -->
+<section id="experience" class="tab-content">
+  <div class="container">
+    <h2>Mi Recorrido Profesional</h2>
+    <p class="info-message">Haz clic en cada experiencia para saber más.</p>
+    <div class="timeline">
+      <div class="timeline-event">
+        <div class="event-header" onclick="toggleDetails(this)">
           <h3>Ingeniera Industrial - Empresa ABC</h3>
           <p><strong>2022 - Presente</strong></p>
+        </div>
+        <div class="event-details">
           <p>Descripción del trabajo realizado y los logros obtenidos en esta posición.</p>
         </div>
-        <div class="timeline-event">
+      </div>
+      <div class="timeline-event">
+        <div class="event-header" onclick="toggleDetails(this)">
           <h3>Beca de Investigación - Universidad de Oviedo</h3>
           <p><strong>2020 - 2021</strong></p>
+        </div>
+        <div class="event-details">
           <p>Trabajo en proyectos de optimización y análisis de procesos industriales.</p>
         </div>
       </div>
+      <!-- Puedes añadir más eventos aquí -->
     </div>
-  </section>
+  </div>
+</section>
 
   
 <!-- Sección Habilidades -->
