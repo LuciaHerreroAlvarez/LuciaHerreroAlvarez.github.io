@@ -221,14 +221,14 @@ nav ul li {
   display: block;
   text-align: center;
   padding: 10px;
-  background-color: #8A2BE2;
+  background-color: #995fa8;
   color: white;
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
 
 .project-card .btn:hover {
-  background-color: #6a1cb2;
+  background-color: #71417e;
 }
 
 /* Timeline */
@@ -242,7 +242,7 @@ nav ul li {
   content: '';
   position: absolute;
   width: 4px;
-  background-color: #8f6b95;
+  background-color: #995fa8;
   top: 0;
   bottom: 0;
   left: 50px;
@@ -273,7 +273,7 @@ nav ul li {
 /* Título del evento */
 .event-header h3 {
   margin: 0;
-  color: #8f6b95;
+  color: #995fa8;
 }
 
 /* Texto del evento */
@@ -288,7 +288,7 @@ nav ul li {
   color: #666;
   padding: 10px;
   background: #f9f9f9;
-  border-left: 4px solid #8f6b95;
+  border-left: 4px solid #995fa8;
   border-radius: 4px;
 }
 
@@ -299,7 +299,7 @@ nav ul li {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: #8f6b95;
+  background-color: #995fa8;
   top: 20px; /* Ajusta la posición vertical del punto */
   left: 50px; /* Alinea el punto con la línea */
   transform: translateX(-50%); /* Asegura que el punto esté centrado en la línea */
@@ -310,7 +310,7 @@ nav ul li {
   text-align: center;
   font-weight: bold;
   margin: 1rem 0;
-  color: #8f6b95;
+  color: #995fa8;
 }
 
 
