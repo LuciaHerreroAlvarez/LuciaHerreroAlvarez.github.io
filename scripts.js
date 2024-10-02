@@ -44,4 +44,25 @@
       tabContents[0].classList.add('active');
       header.style.backgroundImage = backgrounds['about']; // Imagen inicial
     }
+
+ // Aquí añadimos la función para el timeline
+  const timelineHeaders = document.querySelectorAll('.event-header');
+
+  timelineHeaders.forEach(header => {
+    header.addEventListener('click', function() {
+      toggleDetails(this); // Llama a la función toggleDetails cuando se hace clic
+    });
+  });
+
+  // Función para mostrar/ocultar los detalles del evento del timeline
+  function toggleDetails(element) {
+    const details = element.nextElementSibling; // Selecciona el siguiente elemento (detalles)
+
+    if (details.style.display === "block") {
+      details.style.display = "none"; // Oculta los detalles
+    } else {
+      details.style.display = "block"; // Muestra los detalles
+    }
+  }
+    
   });
