@@ -250,24 +250,16 @@ nav ul li {
 }
 
 /* Puntos de la línea de tiempo */
-.timeline::after {
+.timeline-event::before {
   content: '';
   position: absolute;
   width: 20px;
   height: 20px;
   border-radius: 50%;
   background-color: #995fa8;
-  left: 50px; /* Alineación con la línea del timeline */
-  transform: translateX(-50%);
-  z-index: 1;
-}
-
-.timeline-event:nth-child(1)::after {
-  top: 20px; /* Posición vertical para el primer punto */
-}
-
-.timeline-event:nth-child(2)::after {
-  top: calc(20px + 100% + 2rem); /* Calcula la posición para el segundo punto según el margen entre eventos */
+  top: 20px; /* Ajusta la posición vertical del punto */
+  left: -50px; /* Alinea el punto con la línea */
+  transform: translateX(-50%); /* Asegura que el punto esté centrado en la línea */
 }
 
 /* Eventos del timeline */
