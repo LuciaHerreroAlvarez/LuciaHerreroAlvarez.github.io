@@ -312,27 +312,27 @@ nav ul li {
 
 /* Fondo de colores diferentes para cada título */
 .skill-card:nth-child(1) .skill-header {
-  background-color: #900C3F;
+  background-color: #8C234C;
 }
 
 .skill-card:nth-child(2) .skill-header {
-  background-color: #C70039;
+  background-color: #CB2445;
 }
 
 .skill-card:nth-child(3) .skill-header {
-  background-color: #FF5733;
+  background-color: #E14729;
 }
 
 .skill-card:nth-child(4) .skill-header {
-  background-color: #af3162;
+  background-color: #B54470;
 }
 
 .skill-card:nth-child(5) .skill-header {
-  background-color: #e73f6f;
+  background-color: #D84F6A;
 }
 
 .skill-card:nth-child(6) .skill-header {
-  background-color: #ff7e62;
+  background-color: #E9654C;
 }
 
 /* Contenido de la tarjeta (iconos y padding general) */
