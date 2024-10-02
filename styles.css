@@ -255,19 +255,41 @@ nav ul li {
   padding: 1rem 2rem;
   background: #fff;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   margin-bottom: 2rem;
   margin-left: 80px; /* Mantén este margen para que se despeje de la línea */
+  transition: transform 0.3s;
+}
+
+.timeline-event:hover {
+  transform: scale(1.02);
+}
+
+/* Encabezado del evento */
+.event-header {
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
 }
 
 /* Título del evento */
-.timeline-event h3 {
-  margin-bottom: 10px;
+.event-header h3 {
+  margin: 0;
+  color: #8A2BE2;
 }
 
 /* Texto del evento */
-.timeline-event p {
-  margin-bottom: 0;
+.event-header p {
+  margin-bottom: 10px;
+}
+
+/* Detalles del evento */
+.event-details {
+  display: none; /* Ocultar detalles inicialmente */
+  margin-top: 10px;
+  color: #666;
+  padding: 10px;
+  background: #f9f9f9;
+  border-left: 4px solid #8A2BE2;
+  border-radius: 4px;
 }
 
 /* Puntos de la línea de tiempo */
@@ -279,9 +301,18 @@ nav ul li {
   border-radius: 50%;
   background-color: #8A2BE2;
   top: 20px; /* Ajusta la posición vertical del punto */
-  left: -10px; /* Mueve el punto a la izquierda para que esté alineado con la línea */
+  left: 50px; /* Alinea el punto con la línea */
   transform: translateX(-50%); /* Asegura que el punto esté centrado en la línea */
 }
+
+/* Mensaje informativo */
+.info-message {
+  text-align: center;
+  font-weight: bold;
+  margin: 1rem 0;
+  color: #8A2BE2;
+}
+
 
 /* Nueva sección de Habilidades estilo grid */
 .skills-grid {
