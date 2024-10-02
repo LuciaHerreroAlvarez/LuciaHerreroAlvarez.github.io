@@ -258,7 +258,7 @@ nav ul li {
   border-radius: 50%;
   background-color: #995fa8;
   top: 20px; /* Ajusta la posición vertical del punto */
-  left: 50px; /* Alinea el punto con la línea */
+  left: 0px; /* Alinea el punto con la línea */
   transform: translateX(-50%); /* Asegura que el punto esté centrado en la línea */
 }
 
