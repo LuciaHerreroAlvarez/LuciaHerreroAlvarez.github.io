@@ -249,17 +249,25 @@ nav ul li {
   margin-left: -2px; /* Ajuste para centrar la línea */
 }
 
-/* Puntos de la línea de tiempo */
-.timeline-event::before {
-  content: '';
+/* Puntos de la línea de tiempo - Independientes */
+.timeline-point {
   position: absolute;
   width: 20px;
   height: 20px;
   border-radius: 50%;
   background-color: #995fa8;
-  top: 20px; /* Ajusta la posición vertical del punto */
-  left: -50px; /* Alinea el punto con la línea */
-  transform: translateX(-50%); /* Asegura que el punto esté centrado en la línea */
+  left: 50px; /* Alinea el punto con la línea */
+  transform: translateX(-50%);
+  z-index: 1; /* Asegura que los puntos estén por encima de la línea */
+}
+
+/* Estilos para los puntos, espaciados manualmente */
+.timeline-point:nth-child(1) {
+  top: 40px; /* Ajustar para la primera posición */
+}
+
+.timeline-point:nth-child(3) {
+  top: 160px; /* Ajustar para la segunda posición */
 }
 
 /* Eventos del timeline */
