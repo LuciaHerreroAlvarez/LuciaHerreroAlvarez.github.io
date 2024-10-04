@@ -282,10 +282,6 @@ nav ul li {
   top: 40px; /* Ajustar para la primera posición */
 }
 
-.timeline-point:nth-child(3) {
-  top: 160px; /* Ajustar para la segunda posición */
-}
-
 /* Eventos del timeline */
 .timeline-event {
   position: relative;
