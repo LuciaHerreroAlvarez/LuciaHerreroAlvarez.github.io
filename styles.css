@@ -302,6 +302,11 @@ nav ul li {
   transform: scale(1.02);
 }
 
+/* CSS para desplazar los elementos de la lista a la derecha */
+.event-details li {
+  margin-left: 20px; /* Ajusta este valor según lo que necesites */
+}
+
 /* Encabezado del evento */
 .event-header {
   cursor: pointer; /* Cambia el cursor al pasar por encima */
