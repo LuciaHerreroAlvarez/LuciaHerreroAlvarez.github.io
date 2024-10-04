@@ -318,6 +318,14 @@ nav ul li {
   color: #995fa8;
 }
 
+/* Color específico para los títulos según sean trabajo o educacion */
+.event-color-trabajo .event-header h3 {
+  color: #845fad; 
+}
+.event-color-educacion .event-header h3 {
+  color: #c62553; 
+}
+
 /* Texto del evento */
 .event-header p {
   margin-bottom: 10px;
