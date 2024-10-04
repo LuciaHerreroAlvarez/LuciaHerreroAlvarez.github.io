@@ -237,6 +237,15 @@ nav ul li {
   margin-top: 2rem;
 }
 
+/* Timeline horizontal. Imagen centrada */
+.image-container {
+  text-align: center; /* Centrar el contenido dentro del contenedor */
+  margin: 20px 0; /* Espaciado arriba y abajo */
+}
+.image-container img {
+  max-width: 100%; /* Asegura que la imagen no desborde el contenedor */
+  height: auto; /* Mantener la relación de aspecto de la imagen */
+}
 
 /* Timeline Vertical*/
 .timeline {
