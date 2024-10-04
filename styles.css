@@ -258,7 +258,7 @@ nav ul li {
   content: '';
   position: absolute;
   width: 4px;
-  background-color: #995fa8;
+  background-color: #dddddd;
   top: 0;
   bottom: 0;
   left: 50px;
@@ -271,7 +271,7 @@ nav ul li {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: #995fa8;
+  background-color: #dddddd;
   left: 50px; /* Alinea el punto con la línea */
   transform: translateX(-50%);
   z-index: 1; /* Asegura que los puntos estén por encima de la línea */
@@ -339,7 +339,7 @@ nav ul li {
   text-align: center;
   font-weight: bold;
   margin: 1rem 0;
-  color: #995fa8;
+  color: #dddddd;
 }
 
 
