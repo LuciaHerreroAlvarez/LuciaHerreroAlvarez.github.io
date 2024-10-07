@@ -1,3 +1,4 @@
+/************************** Formato general: márgenes, texto, títulos ****************************************/
 /* Reset de márgenes y paddings */
 * {
   margin: 0;
@@ -12,6 +13,37 @@ body {
   line-height: 1.6;
 }
 
+h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  z-index: 3;
+}
+
+h2 {
+  margin-bottom: 1.5rem; /* Ajusta este valor según el espacio que desees */
+}
+
+p {
+  margin-bottom: 1.5rem; /* Ajusta este valor para mayor o menor espacio entre párrafos */
+}
+
+/* Contenido general */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 5rem; /*Márgenes vertical y lateral del contenido dentro del container */
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/***************************************** Header **************************************************/
 /* Estilo del header con overlay y tipografía */
 header {
   position: relative;
@@ -20,7 +52,7 @@ header {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url('images/header-background.jpg');
+  background-image: url('images/suculentasmarron.jpg'); /* Imagen de fondo fija */
   background-size: cover;
   background-position: center;
   color: white;
@@ -39,6 +71,11 @@ header .overlay {
   pointer-events: none; /* El overlay no bloquea los clics */
 }
 
+header p {
+  font-size: 1.2rem;
+  z-index: 3;
+}
+
 /* Logo en el header */
 .logo-header {
   position: absolute;
@@ -48,31 +85,8 @@ header .overlay {
   z-index: 3; /* Coloca el logo sobre el overlay */
 }
 
-h1 {
-  font-size: 4rem;
-  font-weight: bold;
-  letter-spacing: 3px;
-  z-index: 3;
-}
 
-h2 {
-  margin-bottom: 1.5rem; /* Ajusta este valor según el espacio que desees */
-}
-
-.titulo-sobre-mi {
-  margin-top: 50px; /* Ajusta este valor según el espacio superior que necesites */
-}
-
-p {
-  margin-bottom: 1.5rem; /* Ajusta este valor para mayor o menor espacio entre párrafos */
-}
-
-header p {
-  font-size: 1.2rem;
-  z-index: 3;
-}
-
-/* Barra de navegación */
+/***************************************** Barra de navegación **************************************************/
 nav ul {
   display: flex;
   list-style: none;
@@ -110,21 +124,7 @@ nav ul li {
   text-decoration: none; /* Eliminar subrayado en el boton activo */
 }
 
-/* Contenido general */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 3rem 5rem; /*Márgenes vertical y lateral del contenido dentro del container */
-}
-
-.tab-content {
-  display: none;
-}
-
-.tab-content.active {
-  display: block;
-}
-
+/***************************************** Seccion sobre mi **************************************************/
 .profile-pic {
   width: 300px;
   border-radius: 50%;
@@ -136,6 +136,10 @@ nav ul li {
 
 .profile-pic:hover {
   transform: scale(1.1);
+}
+
+.titulo-sobre-mi {
+  margin-top: 50px; /* Ajusta este valor según el espacio superior que necesites */
 }
 
 /* Estilo para la sección con fondo e imagen fija. La parte de literatura*/
@@ -163,7 +167,6 @@ nav ul li {
   background: rgba(0, 0, 0, 0.3); /* Si quieres un overlay oscuro sobre la imagen */
   z-index: 3; /* Para asegurarnos que el overlay esté sobre la imagen pero debajo del texto */
 }
-
 
 /* Ajuste del contenedor de texto */
 .literatura .contain {
@@ -209,7 +212,7 @@ nav ul li {
   margin-top: 10px; /* Espacio encima del mensaje */
 }
 
-/* Sección Proyectos */
+/***************************************** Seccion proyectos **************************************************/
 .projects-grid {
   display: flex;
   gap: 2rem;
@@ -258,7 +261,7 @@ nav ul li {
 }
 
 
-/* Sección de experiencia profesional */
+/***************************************** Seccion experiencia **************************************************/
 
 /* Timeline horizontal. Imagen centrada */
 .image-container {
@@ -269,7 +272,6 @@ nav ul li {
   max-width: 100%; /* Asegura que la imagen no desborde el contenedor */
   height: auto; /* Mantener la relación de aspecto de la imagen */
 }
-
 
 /* Estilos para las cajas de eventos del timeline */
 .timeline-event-box {
@@ -394,7 +396,7 @@ area:hover {
   color: #959595;
 }
 
-
+/***************************************** Seccion habilidades **************************************************/
 /* Nueva sección de Habilidades estilo grid */
 .skills-grid {
   display: grid;
@@ -495,7 +497,7 @@ area:hover {
   height: auto; /* Mantener la relación de aspecto de la imagen */
 }
 
-/* Footer */
+/***************************************** Footer **************************************************/
 footer {
   display: flex;                   /* Usamos flexbox para el layout */
   align-items: center;            /* Centra verticalmente los elementos */
