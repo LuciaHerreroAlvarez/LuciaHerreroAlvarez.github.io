@@ -45,24 +45,38 @@
       header.style.backgroundImage = backgrounds['about']; // Imagen inicial
     }
 
- // Aquí añadimos la función para el timeline
-  const timelineHeaders = document.querySelectorAll('.event-header');
 
-  timelineHeaders.forEach(header => {
-    header.addEventListener('click', function() {
-      toggleDetails(this); // Llama a la función toggleDetails cuando se hace clic
-    });
-  });
 
-  // Función para mostrar/ocultar los detalles del evento del timeline
-  function toggleDetails(element) {
-    const details = element.nextElementSibling; // Selecciona el siguiente elemento (detalles)
+  // Aquí añadimos la función para mostrar los eventos del timeline de foto
+    function mostrarEvento(cajitaId) {
+        // Oculta todas las cajas de eventos
+        const cajitas = document.querySelectorAll('.timeline-event-box'); // Cambia a tu nueva clase
+        cajitas.forEach(cajita => cajita.style.display = 'none');
 
-    if (details.style.display === "block") {
-      details.style.display = "none"; // Oculta los detalles
-    } else {
-      details.style.display = "block"; // Muestra los detalles
+        // Muestra el cajita correspondiente
+        const cajita = document.getElementById(cajitaId);
+        if (cajita) {
+            cajita.style.display = 'block';
+        }
     }
-  }
-    
-  });
+
+    // Aquí puedes añadir la funcionalidad del toggle para el timeline, si es necesario
+    const timelineHeaders = document.querySelectorAll('.event-header');
+
+    timelineHeaders.forEach(header => {
+        header.addEventListener('click', function() {
+            toggleDetails(this); // Llama a la función toggleDetails cuando se hace clic
+        });
+    });
+
+    // Función para mostrar/ocultar los detalles del evento del timeline
+    function toggleDetails(element) {
+        const details = element.nextElementSibling; // Selecciona el siguiente elemento (detalles)
+
+        if (details.style.display === "block") {
+            details.style.display = "none"; // Oculta los detalles
+        } else {
+            details.style.display = "block"; // Muestra los detalles
+        }
+    }
+});
