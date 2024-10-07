@@ -45,6 +45,30 @@
       header.style.backgroundImage = backgrounds['about']; // Imagen inicial
     }
 
+  // Función que maneja el clic en el botón de "me gusta"
+  function handleLike() {
+    // Verifica si el usuario ya ha dado "me gusta"
+    if (!localStorage.getItem('liked')) {
+      // Si no, almacena la información en localStorage
+      localStorage.setItem('liked', 'true');
+
+      // Muestra el mensaje de agradecimiento
+      document.getElementById('like-message').style.display = 'block';
+
+      // (Opcional) Aquí puedes hacer una llamada a tu backend para incrementar el contador de "me gusta"
+      // Por ejemplo: fetch('/increment-like', { method: 'POST' });
+    } else {
+      alert("Ya has dado 'me gusta' a esta página."); // Mensaje de advertencia
+    }
+  }
+
+  // Asigna la función handleLike al botón de "me gusta"
+  const likeButton = document.getElementById('like-button');
+  if (likeButton) {
+    likeButton.addEventListener('click', handleLike);
+  }
+});
+
  // Aquí añadimos la función para el timeline
   const timelineHeaders = document.querySelectorAll('.event-header');
 
