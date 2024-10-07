@@ -199,8 +199,8 @@ nav ul li {
 }
 
 .heart-icon {
-  width: 20px; /* Tamaño del icono */
-  height: 20px; /* Tamaño del icono */
+  width: 30px; /* Tamaño del icono */
+  height: 30px; /* Tamaño del icono */
   margin-right: 5px; /* Espacio entre el icono y el texto */
 }
 
@@ -247,14 +247,14 @@ nav ul li {
   display: block;
   text-align: center;
   padding: 10px;
-  background-color: #dddddd;
+  background-color: #a7a7a7;
   color: white;
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
 
 .project-card .btn:hover {
-  background-color: #a2a2a2;
+  background-color:  #909090; 
 }
 
 
