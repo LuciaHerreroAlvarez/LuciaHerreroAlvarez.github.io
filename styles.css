@@ -438,6 +438,16 @@ nav ul li {
   border-radius: 25px;
 }
 
+/* Idiomas imagen*/
+.image-container2 {
+  text-align: center; /* Centrar el contenido dentro del contenedor */
+  margin: 20px 0; /* Espaciado arriba y abajo */
+}
+.image-container2 img {
+  max-width: 60%; /* Asegura que la imagen no desborde el contenedor */
+  height: auto; /* Mantener la relación de aspecto de la imagen */
+}
+
 /* Footer */
 footer {
   display: flex;                   /* Usamos flexbox para el layout */
