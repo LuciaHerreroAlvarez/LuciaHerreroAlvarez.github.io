@@ -182,6 +182,32 @@ nav ul li {
   z-index: 4; /* El texto siempre debe estar visible sobre la imagen y el overlay */
 }
 
+/* Botoncito de me gusta */
+.like-button-container {
+  text-align: center; /* Centra el contenido */
+  margin-top: 20px; /* Espacio arriba del botón */
+}
+
+#like-button {
+  background-color: #ffcccc; /* Color de fondo del botón */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar el ratón */
+  display: flex; /* Permite alinear el icono y el texto */
+  align-items: center; /* Alinea verticalmente el contenido */
+}
+
+.heart-icon {
+  width: 20px; /* Tamaño del icono */
+  height: 20px; /* Tamaño del icono */
+  margin-right: 5px; /* Espacio entre el icono y el texto */
+}
+
+#like-message {
+  color: #28a745; /* Color del mensaje de agradecimiento */
+  margin-top: 10px; /* Espacio encima del mensaje */
+}
 
 /* Sección Proyectos */
 .projects-grid {
