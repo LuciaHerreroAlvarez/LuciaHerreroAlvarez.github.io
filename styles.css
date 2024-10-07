@@ -438,7 +438,12 @@ nav ul li {
   border-radius: 25px;
 }
 
-/* Idiomas imagen*/
+/* Idiomas*/
+
+.idiomas-title {
+  margin-top: 40px; /* Ajusta el valor según el espacio que desees */
+}
+
 .image-container2 {
   text-align: center; /* Centrar el contenido dentro del contenedor */
   margin: 20px 0; /* Espaciado arriba y abajo */
