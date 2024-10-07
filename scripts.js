@@ -6,6 +6,14 @@
     const tabContents = document.querySelectorAll('.tab-content');
     const header = document.querySelector('header')
     
+/////////////////// Cabeceras para cada pestaña ///////////////////////////////////////////////////
+    const backgrounds = {
+      about: 'url(images/suculentasmarron.jpg)',   // Imagen para la pestaña "Sobre mí"
+      projects: 'url(images/suculentasmarron.jpg)', // Imagen para la pestaña "Proyectos"
+      skills: 'url(images/suculentasmarron.jpg)',  // Imagen para la pestaña "Habilidades"
+      experience: 'url(images/suculentasmarron.jpg)' // Añadir imagen para la pestaña "Experiencia"
+    };
+    
 /////////////////// Botones ///////////////////////////////////////////////////
   tabButtons.forEach(button => {
     button.addEventListener('click', function(e) {  // Añadir 'e' aquí
@@ -36,6 +44,19 @@
       tabContents[0].classList.add('active');
     }
     });
+
+/////////////////// Aquí otra vez cabecera, no entiendo ///////////////////////////////////////////////////
+        // Cambiar el fondo de la cabecera según la pestaña seleccionada
+        header.style.backgroundImage = backgrounds[targetId];
+      });
+    });
+
+    // Mostrar la primera pestaña por defecto y asignar la imagen de fondo
+    if (tabContents.length > 0) {
+      tabButtons[0].classList.add('active');
+      tabContents[0].classList.add('active');
+      header.style.backgroundImage = backgrounds['about']; // Imagen inicial
+    }
 
 /////////////////// Timeline vertical ///////////////////////////////////////////////////
  // Aquí añadimos la función para el timeline
