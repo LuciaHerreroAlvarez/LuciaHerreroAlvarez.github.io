@@ -304,7 +304,6 @@ nav ul li {
 
 /* Puntos de la línea de tiempo - Independientes */
 .timeline-point {
-  position: absolute;
   width: 20px;
   height: 20px;
   border-radius: 50%;
