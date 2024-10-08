@@ -324,6 +324,7 @@ nav ul li {
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   margin-bottom: 2rem;
+  width: 45%; /* Definir un ancho para los eventos */
   transition: transform 0.3s;
 }
 
@@ -363,17 +364,19 @@ nav ul li {
   border-radius: 4px;
 }
 
-/* ******************Características específicas para cada tipo de evento**************** */
+/* ***************Características específicas para cada tipo de evento**************** */
 
 /* Alineación para eventos de trabajo a la derecha y educación a la izquierda */
 .event-color-trabajo {
   position: absolute; 
   left: 55%; /* Mueve los eventos de trabajo a la derecha */
+  top: calc(20px + (var(--event-index) * 120px)); /* Ajusta el cálculo según el índice del evento */
 }
 
 .event-color-educacion {
   position: absolute; 
   left: 5%; /* Mueve los eventos de educación a la izquierda */
+  top: calc(20px + (var(--event-index) * 120px)); /* Ajusta el cálculo según el índice del evento */
 }
 
 /* Color específico para los títulos según sean trabajo o educacion */
