@@ -283,6 +283,8 @@ nav ul li {
 
 /* Timeline Vertical*/
 .timeline {
+  display: flex; /* Los eventos (hijos) controlan el tamaño del contenedor */
+  flex-direction: column; /* Para mantener la dirección vertical */
   position: relative;
   margin-top: 2rem;
   margin-bottom: 2rem; 
