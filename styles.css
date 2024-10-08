@@ -305,7 +305,7 @@ nav ul li {
   height: 20px;
   border-radius: 50%;
   background-color: #dddddd;
-  left: 50px; /* Alinea el punto con la línea */
+  left: 50%; /* Alinea el punto con la línea */
   transform: translateX(-50%);
   z-index: 1; /* Asegura que los puntos estén por encima de la línea */
 }
@@ -323,7 +323,6 @@ nav ul li {
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   margin-bottom: 2rem;
-  margin-left: 80px; /* Mantén este margen para que se despeje de la línea */
   width: 45%; /* Definir un ancho para los eventos */
   transition: transform 0.3s;
 }
