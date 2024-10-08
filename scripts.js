@@ -1,20 +1,16 @@
   // Aquí va todo el código JavaScript
 
 // ///////////////// Inicialización básica///////////////////////////////////////////////////
-  document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
+
+  // Seleccionar botones de las pestañas y el contenido de las pestañas
     const tabButtons = document.querySelectorAll('.tab-button');
     const tabContents = document.querySelectorAll('.tab-content');
-    const header = document.querySelector('header')
+    const header = document.querySelector('header');
     
-// ///////////////// Cabeceras para cada pestaña ///////////////////////////////////////////////////
-    const backgrounds = {
-      about: 'url(images/suculentasmarron.jpg)',   // Imagen para la pestaña "Sobre mí"
-      projects: 'url(images/suculentasmarron.jpg)', // Imagen para la pestaña "Proyectos"
-      skills: 'url(images/suculentasmarron.jpg)',  // Imagen para la pestaña "Habilidades"
-      experience: 'url(images/suculentasmarron.jpg)' // Añadir imagen para la pestaña "Experiencia"
-    };
     
-// ///////////////// Botones ///////////////////////////////////////////////////
+// ///////////////// Configuracion de pestañas ///////////////////////////////////////////////////
+  // Función para manejar el clic en los botones de las pestañas
   tabButtons.forEach(button => {
     button.addEventListener('click', function(e) {  // Añadir 'e' aquí
       e.preventDefault(); // Prevenir comportamiento por defecto del enlace
@@ -34,27 +30,24 @@
           } else {
             content.classList.remove('active');
           }
-            });
-
-// ///////////////// Aquí otra vez cabecera, no entiendo ///////////////////////////////////////////////////
-        // Cambiar el fondo de la cabecera según la pestaña seleccionada
-        header.style.backgroundImage = backgrounds[targetId];
-        });
+          
+       });
     });
+});
 
-    // Mostrar la primera pestaña por defecto y asignar la imagen de fondo
+    // Mostrar la primera pestaña por defecto
     if (tabContents.length > 0) {
       tabButtons[0].classList.add('active');
       tabContents[0].classList.add('active');
-      header.style.backgroundImage = backgrounds['about']; // Imagen inicial
+      header.style.backgroundImage = 'url(images/suculentasmarron.jpg)'; // Imagen inicial
     }
-    });
 
 
 // ///////////////// Timeline vertical ///////////////////////////////////////////////////
- // Aquí añadimos la función para el timeline
+ // Seleccionar cabeceras del timeline
   const timelineHeaders = document.querySelectorAll('.event-header');
 
+// Añadir funcionalidad de clic en las cabeceras del timeline
   timelineHeaders.forEach(header => {
     header.addEventListener('click', function() {
       toggleDetails(this); // Llama a la función toggleDetails cuando se hace clic
@@ -72,4 +65,4 @@
     }
   }
     
-  });
+});
