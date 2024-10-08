@@ -356,8 +356,9 @@ nav ul li {
 .event-details {
   display: none; /* Ocultar detalles inicialmente */
   margin-top: 10px;
+  margin-bottom: 10px;
   color: #666;
-  padding: 20px 10px;
+  padding: 10px;
   background: #f9f9f9;
   border-left: 4px solid #995fa8;
   border-radius: 4px;
