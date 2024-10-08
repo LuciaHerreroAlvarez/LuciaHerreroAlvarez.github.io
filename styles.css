@@ -283,11 +283,8 @@ nav ul li {
 
 /* Timeline Vertical*/
 .timeline {
-  display: flex; /* Los eventos (hijos) controlan el tamaño del contenedor */
-  flex-direction: column; /* Para mantener la dirección vertical */
   position: relative;
   margin-top: 2rem;
-  margin-bottom: 2rem; 
 }
 
 /* Línea del timeline */
@@ -298,17 +295,18 @@ nav ul li {
   background-color: #dddddd;
   top: 0;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%); /* Ajuste para centrar la línea */
+  left: 50px;
+  margin-left: -2px; /* Ajuste para centrar la línea */
 }
 
 /* Puntos de la línea de tiempo - Independientes */
 .timeline-point {
+  position: absolute;
   width: 20px;
   height: 20px;
   border-radius: 50%;
   background-color: #dddddd;
-  left: 50%; /* Alinea el punto con la línea */
+  left: 50px; /* Alinea el punto con la línea */
   transform: translateX(-50%);
   z-index: 1; /* Asegura que los puntos estén por encima de la línea */
 }
@@ -325,8 +323,8 @@ nav ul li {
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  margin-bottom: 2rem; /* Espacio entre eventos */
-  width: 45%; /* Definir un ancho para los eventos */
+  margin-bottom: 2rem;
+  margin-left: 80px; /* Mantén este margen para que se despeje de la línea */
   transition: transform 0.3s;
 }
 
@@ -350,6 +348,14 @@ nav ul li {
   color: #995fa8;
 }
 
+/* Color específico para los títulos según sean trabajo o educacion */
+.event-color-trabajo .event-header h3 {
+  color: #959595; 
+}
+.event-color-educacion .event-header h3 {
+  color: #959595; 
+}
+
 /* Texto del evento */
 .event-header p {
   margin-bottom: 10px;
@@ -366,30 +372,6 @@ nav ul li {
   border-radius: 4px;
 }
 
-/* ***************Características específicas para cada tipo de evento**************** */
-
-/* Alineación para eventos de trabajo a la derecha y educación a la izquierda */
-.event-color-trabajo {
-  position: absolute; 
-  left: 55%; /* Mueve los eventos de trabajo a la derecha */
-  top: calc(20px + (var(--event-index) * 120px)); /* Ajusta el cálculo según el índice del evento */
-}
-
-.event-color-educacion {
-  position: absolute; 
-  left: 5%; /* Mueve los eventos de educación a la izquierda */
-  top: calc(20px + (var(--event-index) * 120px)); /* Ajusta el cálculo según el índice del evento */
-}
-
-/* Color específico para los títulos según sean trabajo o educacion */
-.event-color-trabajo .event-header h3 {
-  color: #959595; 
-}
-.event-color-educacion .event-header h3 {
-  color: #959595; 
-}
-
-
 /* Borde izquierdo específico según el tipo de evento */
 .event-color-trabajo .event-details {
   border-left: 4px solid #4f246a; /* Borde para eventos de trabajo */
@@ -398,8 +380,6 @@ nav ul li {
 .event-color-educacion .event-details {
   border-left: 4px solid #931a3d; /* Borde para eventos de educación */
 }
-
-
 
 /***************************************** Seccion habilidades **************************************************/
 /* Nueva sección de Habilidades estilo grid */
