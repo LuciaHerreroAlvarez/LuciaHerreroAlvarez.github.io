@@ -39,7 +39,6 @@ document.addEventListener('DOMContentLoaded', function() {
     if (tabContents.length > 0) {
       tabButtons[0].classList.add('active');
       tabContents[0].classList.add('active');
-      header.style.backgroundImage = 'url(images/suculentasmarron.jpg)'; // Imagen inicial
     }
 
 
