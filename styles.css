@@ -301,8 +301,8 @@ nav ul li {
 /* Puntos de la línea de tiempo - Independientes */
 .timeline-point {
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   background-color: #dddddd;
   left: 50%; /* Alinea el punto con la línea */
@@ -318,7 +318,7 @@ nav ul li {
 /* Eventos del timeline */
 .timeline-event {
   position: relative;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
