@@ -260,7 +260,6 @@ nav ul li {
   background-color:  #909090; 
 }
 
-
 /***************************************** Seccion experiencia **************************************************/
 
 /* Timeline horizontal. Imagen centrada */
@@ -295,7 +294,7 @@ nav ul li {
   background-color: #dddddd;
   top: 0;
   bottom: 0;
-  left: 50px;
+  left: 50%;
   margin-left: -2px; /* Ajuste para centrar la línea */
 }
 
@@ -348,14 +347,6 @@ nav ul li {
   color: #995fa8;
 }
 
-/* Color específico para los títulos según sean trabajo o educacion */
-.event-color-trabajo .event-header h3 {
-  color: #959595; 
-}
-.event-color-educacion .event-header h3 {
-  color: #959595; 
-}
-
 /* Texto del evento */
 .event-header p {
   margin-bottom: 10px;
@@ -372,6 +363,16 @@ nav ul li {
   border-radius: 4px;
 }
 
+/* ***************Características específicas para cada tipo de evento**************** */
+
+/* Color específico para los títulos según sean trabajo o educacion */
+.event-color-trabajo .event-header h3 {
+  color: #959595; 
+}
+.event-color-educacion .event-header h3 {
+  color: #959595; 
+}
+
 /* Borde izquierdo específico según el tipo de evento */
 .event-color-trabajo .event-details {
   border-left: 4px solid #4f246a; /* Borde para eventos de trabajo */
@@ -380,6 +381,7 @@ nav ul li {
 .event-color-educacion .event-details {
   border-left: 4px solid #931a3d; /* Borde para eventos de educación */
 }
+
 
 /***************************************** Seccion habilidades **************************************************/
 /* Nueva sección de Habilidades estilo grid */
