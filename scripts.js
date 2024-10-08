@@ -35,20 +35,11 @@
             content.classList.remove('active');
           }
             });
-        });
-    });
-
-    // Mostrar la primera pestaña por defecto
-    if (tabContents.length > 0) {
-      tabButtons[0].classList.add('active');
-      tabContents[0].classList.add('active');
-    }
-    });
 
 /////////////////// Aquí otra vez cabecera, no entiendo ///////////////////////////////////////////////////
         // Cambiar el fondo de la cabecera según la pestaña seleccionada
         header.style.backgroundImage = backgrounds[targetId];
-      });
+        });
     });
 
     // Mostrar la primera pestaña por defecto y asignar la imagen de fondo
@@ -57,6 +48,8 @@
       tabContents[0].classList.add('active');
       header.style.backgroundImage = backgrounds['about']; // Imagen inicial
     }
+    });
+
 
 /////////////////// Timeline vertical ///////////////////////////////////////////////////
  // Aquí añadimos la función para el timeline
