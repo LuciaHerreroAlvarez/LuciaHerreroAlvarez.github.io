@@ -285,6 +285,7 @@ nav ul li {
 .timeline {
   position: relative;
   margin-top: 2rem;
+  margin-bottom: 2rem; 
 }
 
 /* Línea del timeline */
@@ -323,7 +324,7 @@ nav ul li {
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  margin-bottom: 2rem;
+  margin-bottom: 2rem; /* Espacio entre eventos */
   width: 45%; /* Definir un ancho para los eventos */
   transition: transform 0.3s;
 }
