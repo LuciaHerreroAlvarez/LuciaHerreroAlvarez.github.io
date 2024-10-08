@@ -318,11 +318,11 @@ nav ul li {
 /* Eventos del timeline */
 .timeline-event {
   position: relative;
-  padding: 0.5rem 2rem;
+  padding: 1rem 2rem 0.5rem 2rem;
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  margin-bottom: 2rem;
+  margin-bottom: 1rem; /* Separación entre cajitas */
   width: 45%; /* Definir un ancho para los eventos */
   transition: transform 0.3s;
 }
@@ -357,7 +357,7 @@ nav ul li {
   display: none; /* Ocultar detalles inicialmente */
   margin-top: 10px;
   color: #666;
-  padding: 10px;
+  padding: 20px 10px;
   background: #f9f9f9;
   border-left: 4px solid #995fa8;
   border-radius: 4px;
