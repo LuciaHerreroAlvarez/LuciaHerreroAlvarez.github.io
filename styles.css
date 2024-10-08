@@ -365,6 +365,12 @@ nav ul li {
 
 /* ***************Características específicas para cada tipo de evento**************** */
 
+/* Alineación para eventos de trabajo a la derecha y educación a la izquierda */
+.event-color-trabajo {
+  position: relative; 
+  left: 55%; /* Mueve los eventos de trabajo a la derecha */
+}
+
 /* Color específico para los títulos según sean trabajo o educacion */
 .event-color-trabajo .event-header h3 {
   color: #959595; 
