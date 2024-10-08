@@ -374,19 +374,19 @@ nav ul li {
 
 /* Color específico para los títulos según sean trabajo o educacion */
 .event-color-trabajo .event-header h3 {
-  color: #959595; 
+  color: #B394E0; 
 }
 .event-color-educacion .event-header h3 {
-  color: #959595; 
+  color: #FF9429; 
 }
 
 /* Borde izquierdo específico según el tipo de evento */
 .event-color-trabajo .event-details {
-  border-left: 4px solid #4f246a; /* Borde para eventos de trabajo */
+  border-left: 4px solid #B394E0; /* Borde para eventos de trabajo */
 }
 
 .event-color-educacion .event-details {
-  border-left: 4px solid #931a3d; /* Borde para eventos de educación */
+  border-left: 4px solid #FF9429; /* Borde para eventos de educación */
 }
 
 
