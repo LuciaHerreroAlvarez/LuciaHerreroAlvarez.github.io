@@ -273,20 +273,6 @@ nav ul li {
   height: auto; /* Mantener la relación de aspecto de la imagen */
 }
 
-/* Estilos para las cajas de eventos del timeline */
-.timeline-event-box {
-    display: none; /* Por defecto ocultamos las cajas */
-    padding: 15px;
-    background-color: #f4f4f4;
-    border: 1px solid #ddd;
-    margin-top: 20px;
-}
-
-/* Opcional: para hacer más visibles las áreas cuando pasas el ratón */
-area:hover {
-    cursor: pointer;
-}
-
 
 /* Timeline Vertical*/
 .timeline {
@@ -320,7 +306,7 @@ area:hover {
 
 /* Estilos para los puntos, espaciados manualmente */
 .timeline-point:nth-child(1) {
-  top: 40px; /* Ajustar para la primera posición */
+  top: 20px; /* Ajustar para la primera posición */
 }
 
 /* Eventos del timeline */
