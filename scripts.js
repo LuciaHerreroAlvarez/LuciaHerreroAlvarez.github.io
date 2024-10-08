@@ -1,12 +1,12 @@
   // Aquí va todo el código JavaScript
 
-/////////////////// Inicialización básica///////////////////////////////////////////////////
+// ///////////////// Inicialización básica///////////////////////////////////////////////////
   document.addEventListener('DOMContentLoaded', function() {
     const tabButtons = document.querySelectorAll('.tab-button');
     const tabContents = document.querySelectorAll('.tab-content');
     const header = document.querySelector('header')
     
-/////////////////// Cabeceras para cada pestaña ///////////////////////////////////////////////////
+// ///////////////// Cabeceras para cada pestaña ///////////////////////////////////////////////////
     const backgrounds = {
       about: 'url(images/suculentasmarron.jpg)',   // Imagen para la pestaña "Sobre mí"
       projects: 'url(images/suculentasmarron.jpg)', // Imagen para la pestaña "Proyectos"
@@ -14,7 +14,7 @@
       experience: 'url(images/suculentasmarron.jpg)' // Añadir imagen para la pestaña "Experiencia"
     };
     
-/////////////////// Botones ///////////////////////////////////////////////////
+// ///////////////// Botones ///////////////////////////////////////////////////
   tabButtons.forEach(button => {
     button.addEventListener('click', function(e) {  // Añadir 'e' aquí
       e.preventDefault(); // Prevenir comportamiento por defecto del enlace
@@ -36,7 +36,7 @@
           }
             });
 
-/////////////////// Aquí otra vez cabecera, no entiendo ///////////////////////////////////////////////////
+// ///////////////// Aquí otra vez cabecera, no entiendo ///////////////////////////////////////////////////
         // Cambiar el fondo de la cabecera según la pestaña seleccionada
         header.style.backgroundImage = backgrounds[targetId];
         });
@@ -51,7 +51,7 @@
     });
 
 
-/////////////////// Timeline vertical ///////////////////////////////////////////////////
+// ///////////////// Timeline vertical ///////////////////////////////////////////////////
  // Aquí añadimos la función para el timeline
   const timelineHeaders = document.querySelectorAll('.event-header');
 
