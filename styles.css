@@ -323,7 +323,7 @@ nav ul li {
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   margin-bottom: 1rem; /* Separación entre cajitas */
-  width: 45%; /* Definir un ancho para los eventos */
+  width: 47%; /* Definir un ancho para los eventos */
   transition: transform 0.3s;
 }
 
@@ -368,7 +368,7 @@ nav ul li {
 /* Alineación para eventos de trabajo a la derecha y educación a la izquierda */
 .event-color-trabajo {
   position: relative; 
-  left: 55%; /* Mueve los eventos de trabajo a la derecha */
+  left: 53%; /* Mueve los eventos de trabajo a la derecha */
 }
 
 /* Color específico para los títulos según sean trabajo o educacion */
