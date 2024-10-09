@@ -73,11 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Cambiar el texto del botón
         likeButton.innerHTML = `
             <img src="images/heart.png" alt="Corazón" class="heart-icon">
-            <span>¡Gracias por tu apoyo!</span>
-        `;
-
-        // Mostrar el mensaje de agradecimiento
-        likeMessage.style.display = "block"; // Mostrar el párrafo
+            <span>¡Gracias por tu apoyo!</span>  `
     });
     
 });
