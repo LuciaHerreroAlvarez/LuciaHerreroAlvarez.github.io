@@ -63,5 +63,21 @@ document.addEventListener('DOMContentLoaded', function() {
       details.style.display = "block"; // Muestra los detalles
     }
   }
+
+  // ///////////////// Botón de "me gusta" ///////////////////////////////////////////////////
+    // Función para manejar el clic en el botón "me gusta"
+    const likeButton = document.getElementById("like-button"); // Obtener el botón
+    const likeMessage = document.getElementById("like-message"); // Obtener el mensaje
+
+    likeButton.addEventListener("click", function() {
+        // Cambiar el texto del botón
+        likeButton.innerHTML = `
+            <img src="images/heart.png" alt="Corazón" class="heart-icon">
+            <span>¡Gracias por tu apoyo!</span>
+        `;
+
+        // Mostrar el mensaje de agradecimiento
+        likeMessage.style.display = "block"; // Mostrar el párrafo
+    });
     
 });
