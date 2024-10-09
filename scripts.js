@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Función para manejar el cambio de idioma
   function setLanguage(language) {
     if (language === 'es') {
-      window.location.href = 'index_es.html'; // Redirigir a la versión en español
+      window.location.href = 'index.html'; // Redirigir a la versión en español
     } else if (language === 'en') {
       window.location.href = 'index_en.html'; // Redirigir a la versión en inglés
     }
