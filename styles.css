@@ -207,11 +207,6 @@ nav ul li {
   margin-right: 5px; /* Espacio entre el icono y el texto */
 }
 
-#like-message {
-  color: #28a745; /* Color del mensaje de agradecimiento */
-  margin-top: 10px; /* Espacio encima del mensaje */
-}
-
 /***************************************** Seccion proyectos **************************************************/
 .projects-grid {
   display: flex;
