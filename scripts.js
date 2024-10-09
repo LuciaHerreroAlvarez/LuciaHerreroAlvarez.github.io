@@ -3,15 +3,6 @@
 // ///////////////// Inicialización básica///////////////////////////////////////////////////
 document.addEventListener('DOMContentLoaded', function() {
 
-  // Función para manejar el cambio de idioma
-  function setLanguage(language) {
-    if (language === 'es') {
-      window.location.href = 'index.html'; // Redirigir a la versión en español
-    } else if (language === 'en') {
-      window.location.href = 'index_en.html'; // Redirigir a la versión en inglés
-    }
-  }
-
   // Seleccionar botones de las pestañas y el contenido de las pestañas
     const tabButtons = document.querySelectorAll('.tab-button');
     const tabContents = document.querySelectorAll('.tab-content');
