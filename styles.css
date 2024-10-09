@@ -201,6 +201,10 @@ nav ul li {
   align-items: center; /* Alinea verticalmente el contenido */
 }
 
+.like-button:hover {
+  transform: scale(1.1);
+}
+
 .heart-icon {
   width: 30px; /* Tamaño del icono */
   height: 30px; /* Tamaño del icono */
