@@ -68,9 +68,8 @@
   nav ul li {
     margin: 50px 5px;           /* Añadir más espacio entre los elementos del menú */
     display: block;          /* Asegúrate de que sea un bloque */
-    padding: 5px;            /* Añadir un padding para evitar colapso */
+    padding: 50px;            /* Añadir un padding para evitar colapso */
     border: 1px solid transparent; /* Borde transparente */
-  }
   }
 
   .tab-button {
