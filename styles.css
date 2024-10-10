@@ -1,4 +1,12 @@
 /************************** Formato general: márgenes, texto, títulos ****************************************/
+/* Diseño responsivo */
+@media (max-width: 768px) {
+  .container {
+    padding: 1.5rem; /* Reducir el padding lateral en móviles */
+    max-width: 100%; /* Asegurarse de que el contenedor ocupe todo el ancho en pantallas pequeñas */
+  }
+}
+
 /* Reset de márgenes y paddings */
 * {
   margin: 0;
