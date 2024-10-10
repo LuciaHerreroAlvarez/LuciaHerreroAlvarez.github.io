@@ -201,8 +201,11 @@ nav ul li {
   align-items: center; /* Alinea verticalmente el contenido */
 }
 
-.like-button:hover {
-  transform: scale(1.1);
+/* Efecto hover */
+.like-button-container button:hover {
+  background-color: #ffcccc; /* Cambia el color de fondo al pasar el cursor */
+  transform: scale(1.05);    /* Aumenta ligeramente el tamaño del botón */
+  border-color: #ff6666;     /* Cambia el color del borde */
 }
 
 .heart-icon {
