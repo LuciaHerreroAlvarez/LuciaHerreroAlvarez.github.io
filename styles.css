@@ -76,19 +76,36 @@
   .tab-button {
     padding: 8px 16px;        /* Reducir un poco el tamaño de los botones de navegación en móviles */
   }
-  .timeline::before {
-    left: 10%;   /* Mueve la línea de tiempo hacia la izquierda */
-  }
 
-  .timeline-event {
-    width: 90%;  /* Asegura que los eventos ocupen el 90% del ancho del contenedor */
-    left: 5%;    /* Centra los eventos horizontalmente */
-    margin: 1rem auto;  /* Añadir márgenes automáticos */
-  }
+ /* .timeline-event {
+  /*  width: 90%;  /* Asegura que los eventos ocupen el 90% del ancho del contenedor */
+  /*  left: 5%;    /* Centra los eventos horizontalmente */
+   /* margin: 1rem auto;  /* Añadir márgenes automáticos */
 
-  .event-color-trabajo {
-    left: 5%;    /* Mueve los eventos de trabajo a la misma posición en móviles */
-  }
+
+/* Timeline Vertical*/
+
+.timeline::before {
+  width: 2px;
+  left: 0%;
+}
+  
+.timeline-point {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  left: 0%; /* Alinea el punto con la línea */
+}
+
+.timeline-event {
+  width: 100%; /* Definir un ancho para los eventos */
+  left: 5%;    /* Centra los eventos horizontalmente */
+}
+
+.event-color-trabajo {
+  left: 5%; /* Mueve los eventos de trabajo a la derecha */
+}
   
   footer {
     flex-direction: column;  /* Cambiar a layout vertical */
