@@ -1,9 +1,9 @@
 /* ************************************** Diseño responsivo ****************************************************** */
 @media (max-width: 768px) {
   .container {
-    padding: 0.5rem; /* Reducir el padding lateral en móviles */
+    padding: 0.2rem; /* Reducir el padding lateral en móviles */
     max-width: 100%; /* Asegurarse de que el contenedor ocupe todo el ancho en pantallas pequeñas */
-    margin: 1px; /* Elimina márgenes laterales si es necesario */
+    margin: 0px; /* Elimina márgenes laterales si es necesario */
   }
     header {
     background-position: top; /* Muestra más la parte superior de la imagen en móviles */
