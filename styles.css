@@ -47,6 +47,7 @@
   .project-card img {
     height: auto;           /* Ajusta la altura de las imágenes para que se adapten mejor */
   }
+  
  .profile-pic {
     width: 100%;           /* La imagen ocupará el 100% del ancho del contenedor en pantallas pequeñas */
     float: none;           /* Elimina el float para evitar que el texto y la imagen se solapen */
@@ -68,7 +69,7 @@
   nav ul li {
     margin: 100px 5px;           /* Añadir más espacio entre los elementos del menú */
     display: block;          /* Asegúrate de que sea un bloque */
-    padding: 50px;            /* Añadir un padding para evitar colapso */
+    padding: 20px;            /* Añadir un padding para evitar colapso */
     border: 1px solid transparent; /* Borde transparente */
   }
 
