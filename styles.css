@@ -1,8 +1,9 @@
 /* ************************************** Diseño responsivo ****************************************************** */
 @media (max-width: 768px) {
   .container {
-    padding: 1rem; /* Reducir el padding lateral en móviles */
+    padding: 0.5rem; /* Reducir el padding lateral en móviles */
     max-width: 100%; /* Asegurarse de que el contenedor ocupe todo el ancho en pantallas pequeñas */
+    margin: 1px; /* Elimina márgenes laterales si es necesario */
   }
     header {
     background-position: top; /* Muestra más la parte superior de la imagen en móviles */
@@ -65,7 +66,7 @@
   }
 
   nav ul li {
-    margin: 20px 5px;           /* Añadir más espacio entre los elementos del menú */
+    margin: 50px 5px;           /* Añadir más espacio entre los elementos del menú */
   }
 
   .tab-button {
