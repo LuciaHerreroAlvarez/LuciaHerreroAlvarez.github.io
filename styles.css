@@ -26,6 +26,7 @@ h2 {
 
 p {
   margin-bottom: 1.5rem; /* Ajusta este valor para mayor o menor espacio entre párrafos */
+  text-align: justify; /* Justifica el texto */
 }
 
 /* Contenido general */
