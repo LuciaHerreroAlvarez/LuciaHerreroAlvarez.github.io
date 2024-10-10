@@ -1,5 +1,4 @@
-/************************** Formato general: márgenes, texto, títulos ****************************************/
-/* Diseño responsivo */
+/* ************************************** Diseño responsivo ****************************************************** */
 @media (max-width: 768px) {
   .container {
     padding: 1.5rem; /* Reducir el padding lateral en móviles */
@@ -20,37 +19,89 @@
   h1 {
     font-size: 2.5rem; /* Reduce el tamaño del título en móviles */
   }
+  
+  h2 {
+    font-size: 1.8rem;  /* Ajustar el h2 */
+  }
+
+  p {
+    font-size: 1rem;    /* Aumentar ligeramente el tamaño del párrafo para mejorar la legibilidad */
+    line-height: 1.7;   /* Aumentar el espaciado entre líneas para mayor claridad */
+  }
 
   header p {
     font-size: 1rem;   /* Ajusta el tamaño de la descripción en móviles */
   }
-    .projects-grid {
+  .projects-grid {
     flex-direction: column; /* Cambia la dirección a vertical en pantallas pequeñas */
     gap: 1rem;              /* Reduce el espacio entre proyectos en móviles */
+    display: block;         /* Cambia el layout a un bloque vertical en pantallas pequeñas */
   }
 
   .project-card {
     width: 100%;            /* Asegura que los cards ocupen todo el ancho disponible */
+    margin-bottom: 2rem;    /* Añade espacio entre cada tarjeta para que no se amontonen */
   }
 
   .project-card img {
     height: auto;           /* Ajusta la altura de las imágenes para que se adapten mejor */
   }
-    .profile-pic {
+ .profile-pic {
     width: 100%;           /* La imagen ocupará el 100% del ancho del contenedor en pantallas pequeñas */
     float: none;           /* Elimina el float para evitar que el texto y la imagen se solapen */
     margin: 1rem auto;     /* Añade margen arriba y abajo, y centra la imagen */
     display: block;        /* Asegura que la imagen sea un bloque */
   }
-    .projects-grid {
-    display: block;         /* Cambia el layout a un bloque vertical en pantallas pequeñas */
+  
+  .skills-grid {
+    grid-template-columns: 1fr;  /* Cambia a una columna en pantallas pequeñas */
+    gap: 1rem;                   /* Reduce el espacio entre tarjetas para que se vea más compacto */
+  }
+  nav ul {
+    flex-direction: column;   /* Cambiar a layout vertical en pantallas pequeñas */
+    align-items: center;      /* Alinear los ítems en el centro */
+    padding: 0;               /* Eliminar el padding innecesario */
+  }
+
+  nav ul li {
+    margin: 10px 0;           /* Añadir más espacio entre los elementos del menú */
+  }
+
+  .tab-button {
+    padding: 8px 16px;        /* Reducir un poco el tamaño de los botones de navegación en móviles */
+  }
+  .timeline::before {
+    left: 10%;   /* Mueve la línea de tiempo hacia la izquierda */
+  }
+
+  .timeline-event {
+    width: 90%;  /* Asegura que los eventos ocupen el 90% del ancho del contenedor */
+    left: 5%;    /* Centra los eventos horizontalmente */
+    margin: 1rem auto;  /* Añadir márgenes automáticos */
+  }
+
+  .event-color-trabajo {
+    left: 5%;    /* Mueve los eventos de trabajo a la misma posición en móviles */
   }
   
-  .project-card {
-    margin-bottom: 2rem;    /* Añade espacio entre cada tarjeta para que no se vean amontonadas */
+  footer {
+    flex-direction: column;  /* Cambiar a layout vertical */
+    align-items: center;     /* Alinear los elementos en el centro */
+    text-align: center;      /* Centrar el texto */
+  }
+
+  footer p {
+    margin: 10px 0;          /* Añadir espacio entre el logo y el texto */
   }
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);  /* Cambia a dos columnas en pantallas medianas */
+  }
+}
+
+/************************** Formato general: márgenes, texto, títulos ****************************************/
 /* Reset de márgenes y paddings */
 * {
   margin: 0;
