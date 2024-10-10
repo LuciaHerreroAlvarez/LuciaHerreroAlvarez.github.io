@@ -57,6 +57,7 @@
     grid-template-columns: 1fr;  /* Cambia a una columna en pantallas pequeñas */
     gap: 1rem;                   /* Reduce el espacio entre tarjetas para que se vea más compacto */
   }
+  
   nav ul {
     flex-direction: column;   /* Cambiar a layout vertical en pantallas pequeñas */
     align-items: center;      /* Alinear los ítems en el centro */
@@ -64,7 +65,7 @@
   }
 
   nav ul li {
-    margin: 10px 5px;           /* Añadir más espacio entre los elementos del menú */
+    margin: 20px 5px;           /* Añadir más espacio entre los elementos del menú */
   }
 
   .tab-button {
