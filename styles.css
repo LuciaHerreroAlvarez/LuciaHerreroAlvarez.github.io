@@ -5,6 +5,50 @@
     padding: 1.5rem; /* Reducir el padding lateral en móviles */
     max-width: 100%; /* Asegurarse de que el contenedor ocupe todo el ancho en pantallas pequeñas */
   }
+    header {
+    background-position: top; /* Muestra más la parte superior de la imagen en móviles */
+    background-size: cover;   /* Asegúrate de que la imagen siempre cubra toda la pantalla */
+    height: 60vh;             /* Reduce la altura del header en móviles */
+  }
+
+  .logo-header {
+    top: 20px;    /* Baja el logo para que quede más centrado */
+    left: 20px;   /* Ajusta la posición lateral también */
+    width: 50px;  /* Reduce el tamaño del logo en móviles */
+  }
+
+  h1 {
+    font-size: 2.5rem; /* Reduce el tamaño del título en móviles */
+  }
+
+  header p {
+    font-size: 1rem;   /* Ajusta el tamaño de la descripción en móviles */
+  }
+    .projects-grid {
+    flex-direction: column; /* Cambia la dirección a vertical en pantallas pequeñas */
+    gap: 1rem;              /* Reduce el espacio entre proyectos en móviles */
+  }
+
+  .project-card {
+    width: 100%;            /* Asegura que los cards ocupen todo el ancho disponible */
+  }
+
+  .project-card img {
+    height: auto;           /* Ajusta la altura de las imágenes para que se adapten mejor */
+  }
+    .profile-pic {
+    width: 100%;           /* La imagen ocupará el 100% del ancho del contenedor en pantallas pequeñas */
+    float: none;           /* Elimina el float para evitar que el texto y la imagen se solapen */
+    margin: 1rem auto;     /* Añade margen arriba y abajo, y centra la imagen */
+    display: block;        /* Asegura que la imagen sea un bloque */
+  }
+    .projects-grid {
+    display: block;         /* Cambia el layout a un bloque vertical en pantallas pequeñas */
+  }
+  
+  .project-card {
+    margin-bottom: 2rem;    /* Añade espacio entre cada tarjeta para que no se vean amontonadas */
+  }
 }
 
 /* Reset de márgenes y paddings */
