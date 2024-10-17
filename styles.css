@@ -220,6 +220,7 @@ header p {
     font-size: 28px; /* Cambia el tamaño de la fuente */
     margin: 20px; /* Espaciado alrededor del div */
     color: white;
+    font-family: 'Roboto Condensed', sans-serif;
     z-index: 3; /* Coloca el logo sobre el overlay */
 }
 
