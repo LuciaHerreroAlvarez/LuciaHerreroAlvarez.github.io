@@ -217,7 +217,7 @@ header p {
     position: absolute;
     top: 40px;   /* Ajusta el valor según lo que necesites */
     right: 40px;  /* Ajusta el valor según lo que necesites */
-    font-size: 18px; /* Cambia el tamaño de la fuente */
+    font-size: 28px; /* Cambia el tamaño de la fuente */
     margin: 20px; /* Espaciado alrededor del div */
     color: white;
     z-index: 3; /* Coloca el logo sobre el overlay */
@@ -225,6 +225,7 @@ header p {
 
 .language-switcher a {
     text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: white;
     padding: 5px 10px; /* Espaciado interno alrededor de los enlaces */
 }
 
