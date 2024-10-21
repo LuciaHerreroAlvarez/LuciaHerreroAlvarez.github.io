@@ -14,15 +14,15 @@
   .logo-header {
     top: 1.2rem;    /* Baja el logo para que quede más centrado */
     left: 1.2rem;   /* Ajusta la posición lateral también */
-    width: 50rem;  /* Reduce el tamaño del logo en móviles */
+    width: 50vw;  /* Reduce el tamaño del logo en móviles */
   }
 
   h1 {
-    font-size: 2.5rem; /* Reduce el tamaño del título en móviles */
+    font-size: 6vw /* Reduce el tamaño del título en móviles */
   }
   
   h2 {
-    font-size: 1.8rem;  /* Ajustar el h2 */
+    font-size: 4vw;  /* Ajustar el h2 */
   }
 
   p {
@@ -41,6 +41,7 @@
 
   .project-card {
     width: 100%;            /* Asegura que los cards ocupen todo el ancho disponible */
+    max-width: 90vw; /* Limita el tamaño máximo en pantallas grandes */
     margin-bottom: 2rem;    /* Añade espacio entre cada tarjeta para que no se amontonen */
   }
 
@@ -50,6 +51,8 @@
   
  .profile-pic {
     width: 100%;           /* La imagen ocupará el 100% del ancho del contenedor en pantallas pequeñas */
+   max-width: 100%;
+     max-width: 20rem;     /* Limita el ancho en pantallas más grandes */
     float: none;           /* Elimina el float para evitar que el texto y la imagen se solapen */
     margin: 1rem auto;     /* Añade margen arriba y abajo, y centra la imagen */
     display: block;        /* Asegura que la imagen sea un bloque */
@@ -58,6 +61,7 @@
   .skills-grid {
     grid-template-columns: 1fr;  /* Cambia a una columna en pantallas pequeñas */
     gap: 1rem;                   /* Reduce el espacio entre tarjetas para que se vea más compacto */
+    max-width: 100%;
   }
   
   nav ul {
@@ -121,6 +125,7 @@
 @media (min-width: 769px) and (max-width: 1024px) {
   .skills-grid {
     grid-template-columns: repeat(2, 1fr);  /* Cambia a dos columnas en pantallas medianas */
+    max-width: 100%;
   }
 }
 
@@ -304,7 +309,7 @@ nav ul li {
   z-index: 2; /* La ponemos por encima del fondo general */
   width: 100vw; /* Ocupa el 100% del ancho de la pantalla */
   margin-left: calc(-50vw + 50%); /* Alinear al borde izquierdo de la pantalla */
-  min-height: 25rem; /* Ajusta la altura mínima según sea necesario */
+  min-height: 40vh; /* Ajusta la altura mínima según sea necesario por la pantalla */
 }
 
 .literatura .overlay {
@@ -367,7 +372,7 @@ nav ul li {
 .projects-grid {
   display: flex;
   gap: 2rem;
-  margin-top: 2rem;
+  margin-top: 5vh;
 }
 
 .project-card {
@@ -384,6 +389,7 @@ nav ul li {
 
 .project-card img {
   width: 100%;
+  max-width: 100%;
   height: 12.5rem;
   object-fit: cover;
 }
@@ -548,6 +554,7 @@ nav ul li {
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   margin-top: 2rem;
+  max-width: 100%;
 }
 
 .skill-card {
