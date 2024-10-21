@@ -67,9 +67,9 @@
   }
 
   nav ul li {
-    margin: 30rem 0.3rem;           /* Añadir más espacio entre los elementos del menú */
+    margin: 1.9rem 0.3rem;           /* Añadir más espacio entre los elementos del menú */
     display: block;          /* Asegúrate de que sea un bloque */
-    padding: 10.3rem;            /* Añadir un padding para evitar colapso */
+    padding: 0.9rem;            /* Añadir un padding para evitar colapso */
     border: 0.06rem solid transparent; /* Borde transparente */
   }
 
@@ -157,7 +157,7 @@ p {
 
 /* Contenido general */
 .container {
-  max-width: 1200rem;
+  max-width: 75rem;
   margin: 0 auto;
   padding: 3rem 5rem; /*Márgenes vertical y lateral del contenido dentro del container */
 }
@@ -245,7 +245,7 @@ nav ul {
 }
 
 nav ul li {
-  margin: 0 10.3rem;
+  margin: 0 0.9rem;
 }
 
 .tab-button {
@@ -253,7 +253,7 @@ nav ul li {
   color: white;
   border: 0.13rem solid white;
   padding: 0.6rem 1.2rem;
-  border-radius: 20.3rem;
+  border-radius: 1.5rem;
   cursor: pointer;
   transition: background-color 0.3s ease, border 0.3s ease;
   z-index: 3;
@@ -275,7 +275,7 @@ nav ul li {
 
 /***************************************** Seccion sobre mi **************************************************/
 .profile-pic {
-  width: 300rem;
+  width: 18.7rem;
   border-radius: 50%;
   transition: transform 0.3s ease;
   float: right; /* Alinea la imagen a la derecha del texto */
@@ -288,7 +288,7 @@ nav ul li {
 }
 
 .titulo-sobre-mi {
-  margin-top: 50rem; /* Ajusta este valor según el espacio superior que necesites */
+  margin-top: 3.1rem; /* Ajusta este valor según el espacio superior que necesites */
 }
 
 /* Estilo para la sección con fondo e imagen fija. La parte de literatura*/
@@ -304,7 +304,7 @@ nav ul li {
   z-index: 2; /* La ponemos por encima del fondo general */
   width: 100vw; /* Ocupa el 100% del ancho de la pantalla */
   margin-left: calc(-50vw + 50%); /* Alinear al borde izquierdo de la pantalla */
-  min-height: 400rem; /* Ajusta la altura mínima según sea necesario */
+  min-height: 25rem; /* Ajusta la altura mínima según sea necesario */
 }
 
 .literatura .overlay {
@@ -321,7 +321,7 @@ nav ul li {
 .literatura .contain {
   position: relative; /* El texto debe estar en una capa superior */
   z-index: 4; /* Para asegurarnos de que el texto esté por encima de la imagen y el overlay */
-  max-width: 1200rem; /* Limita el ancho máximo del texto */
+  max-width: 75rem; /* Limita el ancho máximo del texto */
   text-align: center;
   padding: 0 5rem; /* Añade padding horizontal para dar espacio a los lados */
 }
@@ -358,8 +358,8 @@ nav ul li {
 }
 
 .heart-icon {
-  width: 30rem; /* Tamaño del icono */
-  height: 30rem; /* Tamaño del icono */
+  width: 1.9rem; /* Tamaño del icono */
+  height: 1.9rem; /* Tamaño del icono */
   margin-right: 0.3rem; /* Espacio entre el icono y el texto */
 }
 
@@ -384,7 +384,7 @@ nav ul li {
 
 .project-card img {
   width: 100%;
-  height: 200rem;
+  height: 12.5rem;
   object-fit: cover;
 }
 
@@ -452,8 +452,8 @@ nav ul li {
 /* Puntos de la línea de tiempo - Independientes */
 .timeline-point {
   position: absolute;
-  width: 10.3rem;
-  height: 10.3rem;
+  width: 0.9rem;
+  height: 0.9rem;
   border-radius: 50%;
   background-color: #dddddd;
   left: 50%; /* Alinea el punto con la línea */
@@ -552,7 +552,7 @@ nav ul li {
 
 .skill-card {
   background-color: white;
-  border-radius: 10.3rem;
+  border-radius: 0.9rem;
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
   text-align: center;
   transition: transform 0.3s ease;
@@ -566,7 +566,7 @@ nav ul li {
 .skill-header {
   padding: 1rem;
   color: white;
-  border-radius: 10.3rem 10.3rem 0 0;
+  border-radius: 0.9rem 0.9rem 0 0;
   margin: 0; /* Asegúrate de que no haya margen lateral */
 }
 
@@ -602,7 +602,7 @@ nav ul li {
 
 /* Iconos */
 .skill-card img {
-  height: 80rem;
+  height: 5rem;
   width: auto; 
   margin: 0.6rem;
   transition: transform 0.3s ease;
@@ -624,7 +624,7 @@ nav ul li {
   background-color: #8A2BE2;
   color: white;
   padding: 0.6rem 1.2rem;
-  border-radius: 20.3rem;
+  border-radius: 1.5rem;
 }
 
 /* Idiomas*/
@@ -654,7 +654,7 @@ footer {
 
 /* Logo en el footer */
 .logo-footer {
-  width: 50rem;                   /* Tamaño del logo */
+  width: 3.1rem;                   /* Tamaño del logo */
   margin-right: 0.6rem;            /* Espacio entre el logo y el texto */
   /* Se queda pegado a la izquierda sin usar 'left' o 'top' */
 }
