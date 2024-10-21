@@ -3,7 +3,7 @@
   .container {
     padding: 0.2rem; /* Reducir el padding lateral en móviles */
     max-width: 100%; /* Asegurarse de que el contenedor ocupe todo el ancho en pantallas pequeñas */
-    margin: 0px; /* Elimina márgenes laterales si es necesario */
+    margin: 0rem; /* Elimina márgenes laterales si es necesario */
   }
     header {
     background-position: top; /* Muestra más la parte superior de la imagen en móviles */
@@ -12,9 +12,9 @@
   }
 
   .logo-header {
-    top: 20px;    /* Baja el logo para que quede más centrado */
-    left: 20px;   /* Ajusta la posición lateral también */
-    width: 50px;  /* Reduce el tamaño del logo en móviles */
+    top: 1.2rem;    /* Baja el logo para que quede más centrado */
+    left: 1.2rem;   /* Ajusta la posición lateral también */
+    width: 50rem;  /* Reduce el tamaño del logo en móviles */
   }
 
   h1 {
@@ -67,14 +67,14 @@
   }
 
   nav ul li {
-    margin: 30px 5px;           /* Añadir más espacio entre los elementos del menú */
+    margin: 30rem 0.3rem;           /* Añadir más espacio entre los elementos del menú */
     display: block;          /* Asegúrate de que sea un bloque */
-    padding: 15px;            /* Añadir un padding para evitar colapso */
-    border: 1px solid transparent; /* Borde transparente */
+    padding: 10.3rem;            /* Añadir un padding para evitar colapso */
+    border: 0.06rem solid transparent; /* Borde transparente */
   }
 
   .tab-button {
-    padding: 8px 16px;        /* Reducir un poco el tamaño de los botones de navegación en móviles */
+    padding: 0.5rem 1rem;        /* Reducir un poco el tamaño de los botones de navegación en móviles */
   }
 
  /* .timeline-event {
@@ -86,14 +86,14 @@
 /* Timeline Vertical*/
 
 .timeline::before {
-  width: 2px;
+  width: 0.13rem;
   left: 0%;
 }
   
 .timeline-point {
   position: absolute;
-  width: 8px;
-  height: 8px;
+  width: 0.5rem;
+  height: 0.5rem;
   border-radius: 50%;
   left: 0%; /* Alinea el punto con la línea */
 }
@@ -114,7 +114,7 @@
   }
 
   footer p {
-    margin: 10px 0;          /* Añadir espacio entre el logo y el texto */
+    margin: 0.6rem 0;          /* Añadir espacio entre el logo y el texto */
   }
 }
 
@@ -142,7 +142,7 @@ body {
 h1 {
   font-size: 4rem;
   font-weight: bold;
-  letter-spacing: 3px;
+  letter-spacing: 0.2rem;
   z-index: 3;
 }
 
@@ -157,7 +157,7 @@ p {
 
 /* Contenido general */
 .container {
-  max-width: 1200px;
+  max-width: 1200rem;
   margin: 0 auto;
   padding: 3rem 5rem; /*Márgenes vertical y lateral del contenido dentro del container */
 }
@@ -206,19 +206,19 @@ header p {
 /* Logo en el header */
 .logo-header {
   position: absolute;
-  top: 40px;   /* Ajusta el valor según lo que necesites */
-  left: 40px;  /* Ajusta el valor según lo que necesites */
-  width: 70px; /* Tamaño del logo, ajusta según sea necesario */
+  top: 2.5rem;   /* Ajusta el valor según lo que necesites */
+  left: 2.5rem;  /* Ajusta el valor según lo que necesites */
+  width: 4.4rem; /* Tamaño del logo, ajusta según sea necesario */
   z-index: 3; /* Coloca el logo sobre el overlay */
 }
 
 /* Estilos para el conmutador de idioma */
 .language-switcher {
     position: absolute;
-    top: 40px;   /* Ajusta el valor según lo que necesites */
-    right: 40px;  /* Ajusta el valor según lo que necesites */
-    font-size: 28px; /* Cambia el tamaño de la fuente */
-    margin: 20px; /* Espaciado alrededor del div */
+    top: 2.5rem;   /* Ajusta el valor según lo que necesites */
+    right: 2.5rem;  /* Ajusta el valor según lo que necesites */
+    font-size: 1.7rem; /* Cambia el tamaño de la fuente */
+    margin: 1.2rem; /* Espaciado alrededor del div */
     color: white;
     font-family: 'Roboto Condensed', sans-serif;
     z-index: 3; /* Coloca el logo sobre el overlay */
@@ -227,7 +227,7 @@ header p {
 .language-switcher a {
     text-decoration: none; /* Quita el subrayado de los enlaces */
     color: white;
-    padding: 5px 10px; /* Espaciado interno alrededor de los enlaces */
+    padding: 0.3rem 0.6rem; /* Espaciado interno alrededor de los enlaces */
 }
 
 .language-switcher a:hover {
@@ -245,15 +245,15 @@ nav ul {
 }
 
 nav ul li {
-  margin: 0 15px;
+  margin: 0 10.3rem;
 }
 
 .tab-button {
   background-color: transparent;
   color: white;
-  border: 2px solid white;
-  padding: 10px 20px;
-  border-radius: 25px;
+  border: 0.13rem solid white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20.3rem;
   cursor: pointer;
   transition: background-color 0.3s ease, border 0.3s ease;
   z-index: 3;
@@ -263,7 +263,7 @@ nav ul li {
 .tab-button:hover {
   background-color: white;
   color: #333;
-  border: 2px solid #333;
+  border: 0.13rem solid #333;
   text-decoration: none; /* Eliminar subrayado al hecer hover */
 }
 
@@ -275,12 +275,12 @@ nav ul li {
 
 /***************************************** Seccion sobre mi **************************************************/
 .profile-pic {
-  width: 300px;
+  width: 300rem;
   border-radius: 50%;
   transition: transform 0.3s ease;
   float: right; /* Alinea la imagen a la derecha del texto */
-  margin: -20px 0 1rem 1rem; /* Ajusta el margen para separarla del texto */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  margin: -1.2rem 0 1rem 1rem; /* Ajusta el margen para separarla del texto */
+  box-shadow: 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
 
 .profile-pic:hover {
@@ -288,7 +288,7 @@ nav ul li {
 }
 
 .titulo-sobre-mi {
-  margin-top: 50px; /* Ajusta este valor según el espacio superior que necesites */
+  margin-top: 50rem; /* Ajusta este valor según el espacio superior que necesites */
 }
 
 /* Estilo para la sección con fondo e imagen fija. La parte de literatura*/
@@ -304,7 +304,7 @@ nav ul li {
   z-index: 2; /* La ponemos por encima del fondo general */
   width: 100vw; /* Ocupa el 100% del ancho de la pantalla */
   margin-left: calc(-50vw + 50%); /* Alinear al borde izquierdo de la pantalla */
-  min-height: 400px; /* Ajusta la altura mínima según sea necesario */
+  min-height: 400rem; /* Ajusta la altura mínima según sea necesario */
 }
 
 .literatura .overlay {
@@ -321,7 +321,7 @@ nav ul li {
 .literatura .contain {
   position: relative; /* El texto debe estar en una capa superior */
   z-index: 4; /* Para asegurarnos de que el texto esté por encima de la imagen y el overlay */
-  max-width: 1200px; /* Limita el ancho máximo del texto */
+  max-width: 1200rem; /* Limita el ancho máximo del texto */
   text-align: center;
   padding: 0 5rem; /* Añade padding horizontal para dar espacio a los lados */
 }
@@ -337,14 +337,14 @@ nav ul li {
 /* Botoncito de me gusta */
 .like-button-container {
   text-align: center; /* Centra el contenido */
-  margin-top: 20px; /* Espacio arriba del botón */
+  margin-top: 1.2rem; /* Espacio arriba del botón */
 }
 
 #like-button {
   background-color: #ffcccc; /* Color de fondo del botón */
   border: none; /* Sin borde */
-  padding: 10px 20px; /* Espaciado interno */
-  border-radius: 5px; /* Bordes redondeados */
+  padding: 0.6rem 1.2rem; /* Espaciado interno */
+  border-radius: 0.3rem; /* Bordes redondeados */
   cursor: pointer; /* Cambia el cursor al pasar el ratón */
   display: flex; /* Permite alinear el icono y el texto */
   align-items: center; /* Alinea verticalmente el contenido */
@@ -358,9 +358,9 @@ nav ul li {
 }
 
 .heart-icon {
-  width: 30px; /* Tamaño del icono */
-  height: 30px; /* Tamaño del icono */
-  margin-right: 5px; /* Espacio entre el icono y el texto */
+  width: 30rem; /* Tamaño del icono */
+  height: 30rem; /* Tamaño del icono */
+  margin-right: 0.3rem; /* Espacio entre el icono y el texto */
 }
 
 /***************************************** Seccion proyectos **************************************************/
@@ -372,19 +372,19 @@ nav ul li {
 
 .project-card {
   background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0.6rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s ease;
 }
 
 .project-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-0.6rem);
 }
 
 .project-card img {
   width: 100%;
-  height: 200px;
+  height: 200rem;
   object-fit: cover;
 }
 
@@ -400,7 +400,7 @@ nav ul li {
 .project-card .btn {
   display: block;
   text-align: center;
-  padding: 10px;
+  padding: 0.6rem;
   background-color: #a7a7a7;
   color: white;
   text-decoration: none;
@@ -416,7 +416,7 @@ nav ul li {
 /* Timeline horizontal. Imagen centrada */
 .image-container {
   text-align: center; /* Centrar el contenido dentro del contenedor */
-  margin: 20px 0; /* Espaciado arriba y abajo */
+  margin: 1.2rem 0; /* Espaciado arriba y abajo */
 }
 .image-container img {
   max-width: 100%; /* Asegura que la imagen no desborde el contenedor */
@@ -441,19 +441,19 @@ nav ul li {
 .timeline::before {
   content: '';
   position: absolute;
-  width: 4px;
+  width: 0.25rem;
   background-color: #dddddd;
   top: 0;
   bottom: 0;
   left: 50%;
-  margin-left: -2px; /* Ajuste para centrar la línea */
+  margin-left: -0.13rem; /* Ajuste para centrar la línea */
 }
 
 /* Puntos de la línea de tiempo - Independientes */
 .timeline-point {
   position: absolute;
-  width: 15px;
-  height: 15px;
+  width: 10.3rem;
+  height: 10.3rem;
   border-radius: 50%;
   background-color: #dddddd;
   left: 50%; /* Alinea el punto con la línea */
@@ -463,7 +463,7 @@ nav ul li {
 
 /* Estilos para los puntos, espaciados manualmente */
 .timeline-point:nth-child(1) {
-  top: 20px; /* Ajustar para la primera posición */
+  top: 1.2rem; /* Ajustar para la primera posición */
 }
 
 /* Eventos del timeline */
@@ -471,8 +471,8 @@ nav ul li {
   position: relative;
   padding: 1rem 2rem 0.5rem 2rem;
   background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 1.2rem rgba(0, 0, 0, 0.2);
   margin-bottom: 1rem; /* Separación entre cajitas */
   width: 47%; /* Definir un ancho para los eventos */
   transition: transform 0.3s;
@@ -484,7 +484,7 @@ nav ul li {
 
 /* CSS para desplazar los elementos de la lista a la derecha */
 .event-details li {
-  margin-left: 20px; /* Ajusta este valor según lo que necesites */
+  margin-left: 1.2rem; /* Ajusta este valor según lo que necesites */
 }
 
 /* Encabezado del evento */
@@ -500,19 +500,19 @@ nav ul li {
 
 /* Texto del evento */
 .event-header p {
-  margin-bottom: 10px;
+  margin-bottom: 0.6rem;
 }
 
 /* Detalles del evento */
 .event-details {
   display: none; /* Ocultar detalles inicialmente */
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
   color: #666;
-  padding: 10px;
+  padding: 0.6rem;
   background: #f9f9f9;
-  border-left: 4px solid #995fa8;
-  border-radius: 4px;
+  border-left: 0.25rem solid #995fa8;
+  border-radius: 0.25rem;
 }
 
 /* ***************Características específicas para cada tipo de evento**************** */
@@ -533,11 +533,11 @@ nav ul li {
 
 /* Borde izquierdo específico según el tipo de evento */
 .event-color-trabajo .event-details {
-  border-left: 4px solid #B394E0; /* Borde para eventos de trabajo */
+  border-left: 0.25rem solid #B394E0; /* Borde para eventos de trabajo */
 }
 
 .event-color-educacion .event-details {
-  border-left: 4px solid #FF9429; /* Borde para eventos de educación */
+  border-left: 0.25rem solid #FF9429; /* Borde para eventos de educación */
 }
 
 
@@ -552,21 +552,21 @@ nav ul li {
 
 .skill-card {
   background-color: white;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 10.3rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
   text-align: center;
   transition: transform 0.3s ease;
 }
 
 .skill-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-0.6rem);
 }
 
 /* Nueva clase para el encabezado (título) */
 .skill-header {
   padding: 1rem;
   color: white;
-  border-radius: 15px 15px 0 0;
+  border-radius: 10.3rem 10.3rem 0 0;
   margin: 0; /* Asegúrate de que no haya margen lateral */
 }
 
@@ -602,9 +602,9 @@ nav ul li {
 
 /* Iconos */
 .skill-card img {
-  height: 80px;
+  height: 80rem;
   width: auto; 
-  margin: 10px;
+  margin: 0.6rem;
   transition: transform 0.3s ease;
 }
 
@@ -623,19 +623,19 @@ nav ul li {
 .skills-list li {
   background-color: #8A2BE2;
   color: white;
-  padding: 10px 20px;
-  border-radius: 25px;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20.3rem;
 }
 
 /* Idiomas*/
 
 .idiomas-title {
-  margin-top: 40px; /* Ajusta el valor según el espacio que desees */
+  margin-top: 2.5rem; /* Ajusta el valor según el espacio que desees */
 }
 
 .image-container2 {
   text-align: center; /* Centrar el contenido dentro del contenedor */
-  margin: 20px 0; /* Espaciado arriba y abajo */
+  margin: 1.2rem 0; /* Espaciado arriba y abajo */
 }
 .image-container2 img {
   max-width: 60%; /* Asegura que la imagen no desborde el contenedor */
@@ -649,13 +649,13 @@ footer {
   justify-content: space-between;  /* Espacia el logo y el texto */
   background-color: #333;         /* Color de fondo */
   color: white;                   /* Color del texto */
-  padding: 1rem 40px;            /* Espacio alrededor del contenido */
+  padding: 1rem 2.5rem;            /* Espacio alrededor del contenido */
 }
 
 /* Logo en el footer */
 .logo-footer {
-  width: 50px;                   /* Tamaño del logo */
-  margin-right: 10px;            /* Espacio entre el logo y el texto */
+  width: 50rem;                   /* Tamaño del logo */
+  margin-right: 0.6rem;            /* Espacio entre el logo y el texto */
   /* Se queda pegado a la izquierda sin usar 'left' o 'top' */
 }
 
