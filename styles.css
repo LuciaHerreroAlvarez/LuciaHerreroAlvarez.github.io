@@ -51,8 +51,7 @@
   
  .profile-pic {
     width: 100%;           /* La imagen ocupará el 100% del ancho del contenedor en pantallas pequeñas */
-   max-width: 100%;
-     max-width: 20rem;     /* Limita el ancho en pantallas más grandes */
+    max-width: 20rem;     /* Limita el ancho en pantallas más grandes */
     float: none;           /* Elimina el float para evitar que el texto y la imagen se solapen */
     margin: 1rem auto;     /* Añade margen arriba y abajo, y centra la imagen */
     display: block;        /* Asegura que la imagen sea un bloque */
