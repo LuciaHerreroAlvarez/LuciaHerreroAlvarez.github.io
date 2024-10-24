@@ -1,7 +1,7 @@
 /* ************************************** Diseño responsivo ****************************************************** */
 @media (max-width: 768px) {
   .container {
-    padding: 0.2rem; /* Reducir el padding lateral en móviles */
+    padding: 1.5rem 0.5rem; /* Reducir el padding lateral en móviles */
     max-width: 100%; /* Asegurarse de que el contenedor ocupe todo el ancho en pantallas pequeñas */
     margin: 0rem; /* Elimina márgenes laterales si es necesario */
   }
