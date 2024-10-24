@@ -278,12 +278,17 @@ nav ul li {
 }
 
 /***************************************** Seccion sobre mi **************************************************/
+
+.profile-pic-container {
+  float: right; /* Mantiene el contenedor a la derecha */
+  margin: -1.2rem 0 1rem 1rem; /* Ajusta el margen para separarla del texto */
+}
+
 .profile-pic {
   width: 18.7rem;
   border-radius: 50%;
   transition: transform 0.3s ease;
-  float: right; /* Alinea la imagen a la derecha del texto */
-  margin: -1.2rem 0 1rem 1rem; /* Ajusta el margen para separarla del texto */
+  margin: 0; /* Ajusta el margen para que no se desplace con el texto */
   box-shadow: 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
 
