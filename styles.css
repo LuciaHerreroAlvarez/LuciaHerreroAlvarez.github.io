@@ -684,6 +684,10 @@ footer p {
     gap: 1rem;                   /* Reduce el espacio entre tarjetas para que se vea más compacto */
     max-width: 100%;
   }
+
+.image-container2 img {
+  max-width: 100%; /* Imagen idiomas */
+}
   
   footer {
     flex-direction: column;  /* Cambiar a layout vertical */
