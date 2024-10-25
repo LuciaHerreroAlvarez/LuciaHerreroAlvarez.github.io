@@ -48,14 +48,20 @@
   .project-card img {
     height: auto;           /* Ajusta la altura de las imágenes para que se adapten mejor */
   }
-  
- .profile-pic {
-    width: 100%;           /* La imagen ocupará el 100% del ancho del contenedor en pantallas pequeñas */
-    max-width: 20rem;     /* Limita el ancho en pantallas más grandes */
-    float: none;           /* Elimina el float para evitar que el texto y la imagen se solapen */
-    margin: 0rem;     /* Añade margen arriba y abajo, y centra la imagen */
-    display: block;        /* Asegura que la imagen sea un bloque */
+
+  .profile-pic-container {
+    float: none; /* Elimina el float para centrar en móvil */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    margin: 1rem auto; /* Aplica margen arriba y abajo para separación */
   }
+
+  .profile-pic {
+    width: 70%; /* Ajusta el tamaño de la imagen para pantallas pequeñas */
+    max-width: 18.7rem; /* Limita el ancho máximo para no sobrepasar el tamaño de escritorio */
+    margin: 0 auto; /* Centra la imagen dentro del contenedor */
+  }
+}
   
   .skills-grid {
     grid-template-columns: 1fr;  /* Cambia a una columna en pantallas pequeñas */
@@ -281,7 +287,7 @@ nav ul li {
 
 .profile-pic-container {
   float: right; /* Mantiene el contenedor a la derecha */
-  margin: -1.2rem 0 1rem 1rem; /* Ajusta el margen para separarla del texto */
+  margin: 0rem 1rem; /* Ajusta el margen para separarla del texto */
 }
 
 .profile-pic {
