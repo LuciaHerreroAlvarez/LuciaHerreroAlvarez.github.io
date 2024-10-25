@@ -572,16 +572,20 @@ footer p {
   .language-switcher {
     top: 1.2rem;   /* Ajusta el valor según lo que necesites */
     right: 1.2rem;  /* Ajusta el valor según lo que necesites */
-    font-size: 1rem; /* Cambia el tamaño de la fuente */
+    font-size: 1.2rem; /* Cambia el tamaño de la fuente */
     margin: 1rem; /* Espaciado alrededor del div */
 }
 
   h1 {
-    font-size: 15vw /* Reduce el tamaño del título en móviles */
+    font-size: 10vw /* Reduce el tamaño del título en móviles */
   }
   
   h2 {
-    font-size: 4vw;  /* Ajustar el h2 */
+    font-size: 6vw;  /* Ajustar el h2 */
+  }
+
+  h3 {
+    font-size: 4vw; 
   }
 
   p {
@@ -600,7 +604,7 @@ footer p {
   }
 
   nav ul li {
-    margin: 0.2rem 0.3rem;           /* Añadir más espacio entre los elementos del menú */
+    margin: 0.1rem 0.3rem;           /* Añadir más espacio entre los elementos del menú */
     display: block;          /* Asegúrate de que sea un bloque */
     padding: 0.9rem;            /* Añadir un padding para evitar colapso */
     border: 0.06rem solid transparent; /* Borde transparente */
@@ -662,7 +666,7 @@ footer p {
   width: 0.8rem;
   height: 0.8rem;
   border-radius: 50%;
-  left: 0%; /* Alinea el punto con la línea */
+  left: -0.2%; /* Alinea el punto con la línea */
 }
 
 .timeline-event {
