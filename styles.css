@@ -582,11 +582,11 @@ footer p {
   }
   
   h2 {
-    font-size: 4rem;  /* Ajustar el h2 */
+    font-size: 3rem;  /* Ajustar el h2 */
   }
 
   h3 {
-    font-size: 2.5rem; 
+    font-size: 2rem; 
   }
 
   p {
@@ -667,7 +667,7 @@ footer p {
   width: 0.8rem;
   height: 0.8rem;
   border-radius: 50%;
-  left: -0.2%; /* Alinea el punto con la línea */
+  left: -0.3%; /* Alinea el punto con la línea */
 }
 
 .timeline-event {
