@@ -582,11 +582,11 @@ footer p {
   }
   
   h2 {
-    font-size: 3rem;  /* Ajustar el h2 */
+    font-size: 5vw;  /* Ajustar el h2 */
   }
 
   h3 {
-    font-size: 2rem; 
+    font-size: 3vw; 
   }
 
   p {
