@@ -53,7 +53,7 @@
     float: none; /* Elimina el float para centrar en móvil */
     display: flex;
     justify-content: center; /* Centra horizontalmente */
-    margin: 1rem auto; /* Aplica margen arriba y abajo para separación */
+    margin: 2rem auto; /* Aplica margen arriba y abajo para separación */
   }
 
   .profile-pic {
@@ -287,7 +287,7 @@ nav ul li {
 
 .profile-pic-container {
   float: right; /* Mantiene el contenedor a la derecha */
-  margin: 0rem 1rem; /* Ajusta el margen para separarla del texto */
+  margin: -1rem 0rem 1rem 1rem; /* Ajusta el margen para separarla del texto */
 }
 
 .profile-pic {
