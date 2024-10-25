@@ -1,9 +1,9 @@
 /* ************************************** Diseño responsivo ****************************************************** */
 @media (max-width: 768px) {
   .container {
-    padding: 1.5rem 0.5rem; /* Reducir el padding lateral en móviles */
-    max-width: none; /* Elimina el ancho máximo */
-    margin: 0rem; /* Elimina márgenes laterales si es necesario */
+    padding: 0.5rem 0.5rem !important;  /* Reducir el padding lateral en móviles */
+    max-width: none !important; /* Elimina el ancho máximo */
+    margin: 0rem !important; /* Elimina márgenes laterales si es necesario */
   }
     header {
     background-position: top; /* Muestra más la parte superior de la imagen en móviles */
@@ -50,16 +50,16 @@
   }
 
   .profile-pic-container {
-    float: none; /* Elimina el float para centrar en móvil */
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    margin: 2rem auto; /* Aplica margen arriba y abajo para separación */
+    float: none !important; /* Elimina el float para centrar en móvil */
+    display: flex !important;
+    justify-content: center !important; /* Centra horizontalmente */
+    margin: 2rem auto !important; /* Aplica margen arriba y abajo para separación */
   }
 
   .profile-pic {
-    width: 70%; /* Ajusta el tamaño de la imagen para pantallas pequeñas */
-    max-width: 18.7rem; /* Limita el ancho máximo para no sobrepasar el tamaño de escritorio */
-    margin: 0 auto; /* Centra la imagen dentro del contenedor */
+    width: 70% !important; /* Ajusta el tamaño de la imagen para pantallas pequeñas */
+    max-width: 18.7rem !important; /* Limita el ancho máximo para no sobrepasar el tamaño de escritorio */
+    margin: 0 auto !important; /* Centra la imagen dentro del contenedor */
   }
 }
   
