@@ -1,139 +1,3 @@
-/* ************************************** Diseño responsivo ****************************************************** */
-@media (max-width: 768px) {
-  .container {
-    padding: 0.5rem 0.5rem;  /* Reducir el padding lateral en móviles */
-    max-width: none; /* Elimina el ancho máximo */
-    margin: 0rem; /* Elimina márgenes laterales si es necesario */
-  }
-    header {
-    background-position: top; /* Muestra más la parte superior de la imagen en móviles */
-    background-size: cover;   /* Asegúrate de que la imagen siempre cubra toda la pantalla */
-    height: 60vh;             /* Reduce la altura del header en móviles */
-  }
-
-  .logo-header {
-    top: 1.2rem;    /* Baja el logo para que quede más centrado */
-    left: 1.2rem;   /* Ajusta la posición lateral también */
-    width: 50vw;  /* Reduce el tamaño del logo en móviles */
-  }
-
-  h1 {
-    font-size: 6vw /* Reduce el tamaño del título en móviles */
-  }
-  
-  h2 {
-    font-size: 4vw;  /* Ajustar el h2 */
-  }
-
-  p {
-    font-size: 1rem;    /* Aumentar ligeramente el tamaño del párrafo para mejorar la legibilidad */
-    line-height: 1.7;   /* Aumentar el espaciado entre líneas para mayor claridad */
-  }
-
-  header p {
-    font-size: 1rem;   /* Ajusta el tamaño de la descripción en móviles */
-  }
-  .projects-grid {
-    flex-direction: column; /* Cambia la dirección a vertical en pantallas pequeñas */
-    gap: 1rem;              /* Reduce el espacio entre proyectos en móviles */
-    display: block;         /* Cambia el layout a un bloque vertical en pantallas pequeñas */
-  }
-
-  .project-card {
-    width: 100%;            /* Asegura que los cards ocupen todo el ancho disponible */
-    max-width: 90vw; /* Limita el tamaño máximo en pantallas grandes */
-    margin-bottom: 2rem;    /* Añade espacio entre cada tarjeta para que no se amontonen */
-  }
-
-  .project-card img {
-    height: auto;           /* Ajusta la altura de las imágenes para que se adapten mejor */
-  }
-
-  .profile-pic-container {
-    float: none; /* Elimina el float para centrar en móvil */
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    margin: 2rem auto; /* Aplica margen arriba y abajo para separación */
-  }
-
-  .profile-pic {
-    width: 70%; /* Ajusta el tamaño de la imagen para pantallas pequeñas */
-    max-width: 18.7rem; /* Limita el ancho máximo para no sobrepasar el tamaño de escritorio */
-    margin: 0 auto; /* Centra la imagen dentro del contenedor */
-  }
-}
-  
-  .skills-grid {
-    grid-template-columns: 1fr;  /* Cambia a una columna en pantallas pequeñas */
-    gap: 1rem;                   /* Reduce el espacio entre tarjetas para que se vea más compacto */
-    max-width: 100%;
-  }
-  
-  nav ul {
-    flex-direction: column;   /* Cambiar a layout vertical en pantallas pequeñas */
-    align-items: center;      /* Alinear los ítems en el centro */
-    padding: 0;               /* Eliminar el padding innecesario */
-  }
-
-  nav ul li {
-    margin: 1.9rem 0.3rem;           /* Añadir más espacio entre los elementos del menú */
-    display: block;          /* Asegúrate de que sea un bloque */
-    padding: 0.9rem;            /* Añadir un padding para evitar colapso */
-    border: 0.06rem solid transparent; /* Borde transparente */
-  }
-
-  .tab-button {
-    padding: 0.5rem 1rem;        /* Reducir un poco el tamaño de los botones de navegación en móviles */
-  }
-
- /* .timeline-event {
-  /*  width: 90%;  /* Asegura que los eventos ocupen el 90% del ancho del contenedor */
-  /*  left: 5%;    /* Centra los eventos horizontalmente */
-   /* margin: 1rem auto;  /* Añadir márgenes automáticos */
-
-
-/* Timeline Vertical*/
-
-.timeline::before {
-  width: 0.13rem;
-  left: 0%;
-}
-  
-.timeline-point {
-  position: absolute;
-  width: 0.5rem;
-  height: 0.5rem;
-  border-radius: 50%;
-  left: 0%; /* Alinea el punto con la línea */
-}
-
-.timeline-event {
-  width: 100%; /* Definir un ancho para los eventos */
-  left: 5%;    /* Centra los eventos horizontalmente */
-}
-
-.event-color-trabajo {
-  left: 5%; /* Mueve los eventos de trabajo a la derecha */
-}
-  
-  footer {
-    flex-direction: column;  /* Cambiar a layout vertical */
-    align-items: center;     /* Alinear los elementos en el centro */
-    text-align: center;      /* Centrar el texto */
-  }
-
-  footer p {
-    margin: 0.6rem 0;          /* Añadir espacio entre el logo y el texto */
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .skills-grid {
-    grid-template-columns: repeat(2, 1fr);  /* Cambia a dos columnas en pantallas medianas */
-    max-width: 100%;
-  }
-}
-
 
 /************************** Formato general: márgenes, texto, títulos ****************************************/
 /* Reset de márgenes y paddings */
@@ -682,6 +546,143 @@ footer p {
   margin: 0;                     /* Elimina el margen del párrafo */
   flex-grow: 1;                  /* Permite que el texto use el espacio restante */
   text-align: center;            /* Centra el texto horizontalmente */
+}
+
+
+/* ************************************** Diseño responsivo ****************************************************** */
+@media (max-width: 768px) {
+  .container {
+    padding: 1.5rem 1.5rem !important;  /* Reducir el padding lateral en móviles */
+    max-width: none !important; /* Elimina el ancho máximo */
+    margin: 0rem !important; /* Elimina márgenes laterales si es necesario */
+  }
+    header {
+    background-position: top; /* Muestra más la parte superior de la imagen en móviles */
+    background-size: cover;   /* Asegúrate de que la imagen siempre cubra toda la pantalla */
+    height: 60vh;             /* Reduce la altura del header en móviles */
+  }
+
+  .logo-header {
+    top: 1.2rem;    /* Baja el logo para que quede más centrado */
+    left: 1.2rem;   /* Ajusta la posición lateral también */
+    width: 50vw;  /* Reduce el tamaño del logo en móviles */
+  }
+
+  h1 {
+    font-size: 6vw /* Reduce el tamaño del título en móviles */
+  }
+  
+  h2 {
+    font-size: 4vw;  /* Ajustar el h2 */
+  }
+
+  p {
+    font-size: 1rem;    /* Aumentar ligeramente el tamaño del párrafo para mejorar la legibilidad */
+    line-height: 1.7;   /* Aumentar el espaciado entre líneas para mayor claridad */
+  }
+
+  header p {
+    font-size: 1rem;   /* Ajusta el tamaño de la descripción en móviles */
+  }
+  .projects-grid {
+    flex-direction: column; /* Cambia la dirección a vertical en pantallas pequeñas */
+    gap: 1rem;              /* Reduce el espacio entre proyectos en móviles */
+    display: block;         /* Cambia el layout a un bloque vertical en pantallas pequeñas */
+  }
+
+  .project-card {
+    width: 100%;            /* Asegura que los cards ocupen todo el ancho disponible */
+    max-width: 90vw; /* Limita el tamaño máximo en pantallas grandes */
+    margin-bottom: 2rem;    /* Añade espacio entre cada tarjeta para que no se amontonen */
+  }
+
+  .project-card img {
+    height: auto;           /* Ajusta la altura de las imágenes para que se adapten mejor */
+  }
+
+  .profile-pic-container {
+    float: none !important; /* Elimina el float para centrar en móvil */
+    display: flex !important;
+    justify-content: center !important; /* Centra horizontalmente */
+    margin: 2rem auto !important; /* Aplica margen arriba y abajo para separación */
+  }
+
+  .profile-pic {
+    width: 70% !important; /* Ajusta el tamaño de la imagen para pantallas pequeñas */
+    max-width: 18.7rem !important; /* Limita el ancho máximo para no sobrepasar el tamaño de escritorio */
+    margin: 0 auto !important; /* Centra la imagen dentro del contenedor */
+  }
+
+  
+  .skills-grid {
+    grid-template-columns: 1fr;  /* Cambia a una columna en pantallas pequeñas */
+    gap: 1rem;                   /* Reduce el espacio entre tarjetas para que se vea más compacto */
+    max-width: 100%;
+  }
+  
+  nav ul {
+    flex-direction: column !important;   /* Cambiar a layout vertical en pantallas pequeñas */
+    align-items: center !important;      /* Alinear los ítems en el centro */
+    padding: 0 !important;               /* Eliminar el padding innecesario */
+  }
+
+  nav ul li {
+    margin: 1.9rem 0.3rem !important;           /* Añadir más espacio entre los elementos del menú */
+    display: block !important;          /* Asegúrate de que sea un bloque */
+    padding: 0.9rem !important;            /* Añadir un padding para evitar colapso */
+    border: 0.06rem solid transparent !important; /* Borde transparente */
+  }
+
+  .tab-button {
+    padding: 0.5rem 1rem;        /* Reducir un poco el tamaño de los botones de navegación en móviles */
+  }
+
+  .timeline-event {
+    width: 90%;  /* Asegura que los eventos ocupen el 90% del ancho del contenedor */
+    left: 5%;    /* Centra los eventos horizontalmente */
+    margin: 1rem auto;  /* Añadir márgenes automáticos */
+ }
+
+/* Timeline Vertical*/
+
+.timeline::before {
+  width: 0.13rem;
+  left: 0%;
+}
+  
+.timeline-point {
+  position: absolute;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  left: 0%; /* Alinea el punto con la línea */
+}
+
+.timeline-event {
+  width: 100%; /* Definir un ancho para los eventos */
+  left: 5%;    /* Centra los eventos horizontalmente */
+}
+
+.event-color-trabajo {
+  left: 5%; /* Mueve los eventos de trabajo a la derecha */
+}
+  
+  footer {
+    flex-direction: column;  /* Cambiar a layout vertical */
+    align-items: center;     /* Alinear los elementos en el centro */
+    text-align: center;      /* Centrar el texto */
+  }
+
+  footer p {
+    margin: 0.6rem 0;          /* Añadir espacio entre el logo y el texto */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);  /* Cambia a dos columnas en pantallas medianas */
+    max-width: 100%;
+  }
 }
 
 
