@@ -560,7 +560,7 @@ footer p {
     header {
     background-position: top; /* Muestra más la parte superior de la imagen en móviles */
     background-size: cover;   /* Asegúrate de que la imagen siempre cubra toda la pantalla */
-    height: 60vh;             /* Reduce la altura del header en móviles */
+    height: 100vh;             /* Reduce la altura del header en móviles */
   }
 
   .logo-header {
@@ -572,7 +572,7 @@ footer p {
   .language-switcher {
     top: 1.2rem;   /* Ajusta el valor según lo que necesites */
     right: 1.2rem;  /* Ajusta el valor según lo que necesites */
-    font-size: 1.2rem; /* Cambia el tamaño de la fuente */
+    font-size: 1.5rem; /* Cambia el tamaño de la fuente */
     margin: 1rem; /* Espaciado alrededor del div */
 }
 
