@@ -553,7 +553,7 @@ footer p {
 /* ************************************** Diseño responsivo ****************************************************** */
 @media (max-width: 768px) {
   .container {
-    padding: 1.5rem 3rem;  /* Reducir el padding lateral en móviles */
+    padding: 1.5rem 2.5rem;  /* Reducir el padding lateral en móviles */
     max-width: none; /* Elimina el ancho máximo */
     margin: 0rem; /* Elimina márgenes laterales si es necesario */
   }
@@ -566,11 +566,18 @@ footer p {
   .logo-header {
     top: 1.2rem;    /* Baja el logo para que quede más centrado */
     left: 1.2rem;   /* Ajusta la posición lateral también */
-    width: 5vw;  /* Reduce el tamaño del logo en móviles */
+    width: 15vw;  /* Reduce el tamaño del logo en móviles */
   }
 
+  .language-switcher {
+    top: 1.2rem;   /* Ajusta el valor según lo que necesites */
+    right: 1.2rem;  /* Ajusta el valor según lo que necesites */
+    font-size: 1rem; /* Cambia el tamaño de la fuente */
+    margin: 1rem; /* Espaciado alrededor del div */
+}
+
   h1 {
-    font-size: 6vw /* Reduce el tamaño del título en móviles */
+    font-size: 15vw /* Reduce el tamaño del título en móviles */
   }
   
   h2 {
@@ -584,6 +591,36 @@ footer p {
 
   header p {
     font-size: 1rem;   /* Ajusta el tamaño de la descripción en móviles */
+  }
+
+  nav ul {
+    flex-direction: column;   /* Cambiar a layout vertical en pantallas pequeñas */
+    align-items: center;      /* Alinear los ítems en el centro */
+    padding: 0;               /* Eliminar el padding innecesario */
+  }
+
+  nav ul li {
+    margin: 0.2rem 0.3rem;           /* Añadir más espacio entre los elementos del menú */
+    display: block;          /* Asegúrate de que sea un bloque */
+    padding: 0.9rem;            /* Añadir un padding para evitar colapso */
+    border: 0.06rem solid transparent; /* Borde transparente */
+  }
+
+  .tab-button {
+    padding: 0.5rem 1rem;        /* Reducir un poco el tamaño de los botones de navegación en móviles */
+  }
+
+  .profile-pic-container {
+    float: none; /* Elimina el float para centrar en móvil */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    margin: 2rem auto; /* Aplica margen arriba y abajo para separación */
+  }
+
+  .profile-pic {
+    width: 100%; /* Ajusta el tamaño de la imagen para pantallas pequeñas */
+    max-width: 18.7rem; /* Limita el ancho máximo para no sobrepasar el tamaño de escritorio */
+    margin: 0 auto; /* Centra la imagen dentro del contenedor */
   }
 
 /* Seccion literatura */
@@ -613,43 +650,6 @@ footer p {
     height: auto;           /* Ajusta la altura de las imágenes para que se adapten mejor */
   }
 
-  .profile-pic-container {
-    float: none; /* Elimina el float para centrar en móvil */
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    margin: 2rem auto; /* Aplica margen arriba y abajo para separación */
-  }
-
-  .profile-pic {
-    width: 100%; /* Ajusta el tamaño de la imagen para pantallas pequeñas */
-    max-width: 18.7rem; /* Limita el ancho máximo para no sobrepasar el tamaño de escritorio */
-    margin: 0 auto; /* Centra la imagen dentro del contenedor */
-  }
-
-  
-  .skills-grid {
-    grid-template-columns: 1fr;  /* Cambia a una columna en pantallas pequeñas */
-    gap: 1rem;                   /* Reduce el espacio entre tarjetas para que se vea más compacto */
-    max-width: 100%;
-  }
-  
-  nav ul {
-    flex-direction: column;   /* Cambiar a layout vertical en pantallas pequeñas */
-    align-items: center;      /* Alinear los ítems en el centro */
-    padding: 0;               /* Eliminar el padding innecesario */
-  }
-
-  nav ul li {
-    margin: 0.5rem 0.3rem;           /* Añadir más espacio entre los elementos del menú */
-    display: block;          /* Asegúrate de que sea un bloque */
-    padding: 0.9rem;            /* Añadir un padding para evitar colapso */
-    border: 0.06rem solid transparent; /* Borde transparente */
-  }
-
-  .tab-button {
-    padding: 0.5rem 1rem;        /* Reducir un poco el tamaño de los botones de navegación en móviles */
-  }
-
 /* Timeline Vertical*/
 
 .timeline::before {
@@ -659,8 +659,8 @@ footer p {
   
 .timeline-point {
   position: absolute;
-  width: 0.5rem;
-  height: 0.5rem;
+  width: 0.8rem;
+  height: 0.8rem;
   border-radius: 50%;
   left: 0%; /* Alinea el punto con la línea */
 }
@@ -673,6 +673,12 @@ footer p {
 .event-color-trabajo {
   left: 5%; /* Mueve los eventos de trabajo a la derecha */
 }
+
+  .skills-grid {
+    grid-template-columns: 1fr;  /* Cambia a una columna en pantallas pequeñas */
+    gap: 1rem;                   /* Reduce el espacio entre tarjetas para que se vea más compacto */
+    max-width: 100%;
+  }
   
   footer {
     flex-direction: column;  /* Cambiar a layout vertical */
