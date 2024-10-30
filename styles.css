@@ -578,7 +578,8 @@ footer p {
 
   h1 {
     font-size: 7.5rem /* Reduce el tamaño del título en móviles */
-    letter-spacing: 0.06rem; /* Reduce el espaciado de letras en móviles */
+    letter-spacing: 0rem; /* Reduce el espaciado de letras en móviles */
+    line-height: 1; /* Reduce el interlineado en móviles */
   }
   
   h2 {
@@ -586,7 +587,7 @@ footer p {
   }
 
   h3 {
-    font-size: 3vw; 
+    font-size: 4vw; 
   }
 
   p {
