@@ -91,9 +91,10 @@ header p {
     display: block; /* Hace que la imagen se comporte como un bloque */
     margin: 0 auto; /* Centra la imagen horizontalmente */
     position: relative; /* Permite posicionar la imagen con respecto al header */
-    bottom: 1rem; /* Distancia desde el borde inferior del header */
+    bottom: 10rem; /* Distancia desde el borde inferior del header */
     max-width: 10rem; /* La imagen no excederá 10 rem de ancho */
     height: auto; /* Mantiene la proporción de la imagen */
+    z-index: 3;
 }
 
 /* Estilos para el conmutador de idioma */
