@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Seleccionar botones de las pestañas y el contenido de las pestañas
     const tabButtons = document.querySelectorAll('.tab-button');
     const tabContents = document.querySelectorAll('.tab-content');
+    const flechitasImage = document.querySelector('.flechitas-image');
     const header = document.querySelector('header');
     
     
@@ -32,6 +33,9 @@ document.addEventListener('DOMContentLoaded', function() {
           }
           
        });
+
+        // Iniciar la animación de las flechas
+         flechitasImage.classList.add('flechitas-moving'); 
     });
 });
 
@@ -39,8 +43,13 @@ document.addEventListener('DOMContentLoaded', function() {
     if (tabContents.length > 0) {
       tabButtons[0].classList.add('active');
       tabContents[0].classList.add('active');
+      flechitasImage.classList.add('flechitas-moving'); // Inicia la animación al cargar
     }
 
+// ///////////////// Detener animación al hacer scroll //////////////////
+    window.addEventListener('scroll', function() {
+        flechitasImage.classList.remove('flechitas-moving'); // Detener la animación al hacer scroll
+    });
 
 // ///////////////// Timeline vertical ///////////////////////////////////////////////////
  // Seleccionar cabeceras del timeline
