@@ -1,5 +1,9 @@
 
 /************************** Formato general: márgenes, texto, títulos ****************************************/
+html {
+    scroll-behavior: smooth;
+}
+
 /* Reset de márgenes y paddings */
 * {
   margin: 0;
