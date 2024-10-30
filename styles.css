@@ -92,7 +92,7 @@ header p {
     margin: 0 auto; /* Centra la imagen horizontalmente */
     position: absolute; /* Permite posicionar la imagen con respecto al header */
     bottom: 3rem; /* Distancia desde el borde inferior del header */
-    max-width: 8rem; /* La imagen no excederá 10 rem de ancho */
+    max-width: 5rem; /* La imagen no excederá 10 rem de ancho */
     height: auto; /* Mantiene la proporción de la imagen */
     z-index: 3;
 }
