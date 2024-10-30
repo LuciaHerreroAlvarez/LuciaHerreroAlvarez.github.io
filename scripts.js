@@ -51,6 +51,41 @@ document.addEventListener('DOMContentLoaded', function() {
         flechitasImage.classList.remove('flechitas-moving'); // Detener la animación al hacer scroll
     });
 
+// ///////////////// Manejo de enlaces de desplazamiento entre pestañas ///////////////////
+document.querySelectorAll('a[data-target]').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('data-target');
+        
+        // Activar la pestaña correspondiente
+        tabButtons.forEach(button => {
+            const buttonTarget = button.getAttribute('data-target');
+            if (buttonTarget === targetId) {
+                button.classList.add('active');
+            } else {
+                button.classList.remove('active');
+            }
+        });
+
+        // Mostrar el contenido correspondiente
+        tabContents.forEach(content => {
+            if (content.id === targetId) {
+                content.classList.add('active');
+            } else {
+                content.classList.remove('active');
+            }
+        });
+
+        // Iniciar la animación de las flechas
+        flechitasImage.classList.add('flechitas-moving');
+
+        // Desplazarse a la sección correspondiente después de activar la pestaña
+        setTimeout(() => {
+            document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+    });
+});
+  
 // ///////////////// Timeline vertical ///////////////////////////////////////////////////
  // Seleccionar cabeceras del timeline
   const timelineHeaders = document.querySelectorAll('.event-header');
