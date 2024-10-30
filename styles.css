@@ -97,6 +97,17 @@ header p {
     z-index: 3;
 }
 
+/* CSS para la animación de la imagen flechitas */
+@keyframes moveFlechitas {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(10px); /* Ajusta el valor según el movimiento deseado */}
+    100% {transform: translateY(0);}
+}
+
+.flechitas-moving {
+    animation: moveFlechitas 1s ease-in-out infinite; /* Cambia la duración según lo desees */
+}
+
 /* Estilos para el conmutador de idioma */
 .language-switcher {
     position: fixed;
