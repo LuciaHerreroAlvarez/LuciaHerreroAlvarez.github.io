@@ -244,7 +244,7 @@ nav ul li {
     position: relative;             /* Para posicionar el texto encima de la imagen */
     width: 100%;                    /* Ocupa el ancho completo del contenedor */
     margin: 1.5rem 0;               /* Espacio arriba y abajo */
-    height: 300px;                /* Altura específica que quieres mostrar */
+    height: 20rem;                /* Altura específica que quieres mostrar */
     overflow: hidden;             /* Oculta el exceso de imagen fuera de esta altura */
 }
 
