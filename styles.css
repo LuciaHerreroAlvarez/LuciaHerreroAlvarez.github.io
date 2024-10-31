@@ -244,13 +244,15 @@ nav ul li {
     position: relative;             /* Para posicionar el texto encima de la imagen */
     width: 100%;                    /* Ocupa el ancho completo del contenedor */
     margin: 1.5rem 0;               /* Espacio arriba y abajo */
+    height: 300px;                /* Altura específica que quieres mostrar */
+    overflow: hidden;             /* Oculta el exceso de imagen fuera de esta altura */
 }
 
 /* Imagen de ancho completo */
 .full-width-image {
     width: 100%;                    /* La imagen se ajusta al 100% del contenedor */
-    height: auto;                   /* Mantiene la proporción */
-    border-radius: 8px;             /* Bordes redondeados, opcional */
+    height: 100%;                 /* Se ajusta a la altura del contenedor */
+    object-fit: cover;            /* Cubre el contenedor manteniendo su relación de aspecto */
 }
 
 /* Cuadro de texto sobre la imagen */
