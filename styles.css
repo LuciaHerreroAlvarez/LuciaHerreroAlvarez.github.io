@@ -574,6 +574,22 @@ footer p {
   text-align: center;            /* Centra el texto horizontalmente */
 }
 
+/* Iconos del footer */
+.footer-icon {
+  width: 1.2rem;                    /* Tamaño de los iconos */
+  vertical-align: middle;           /* Alineación vertical del icono con el texto */
+  margin-right: 0.3rem;             /* Espacio entre el icono y el texto */
+}
+
+/* Estilos para los enlaces del footer */
+footer a {
+  text-decoration: none;            /* Elimina el subrayado */
+  color: white;                     /* Mantiene el color blanco */
+}
+
+footer a:hover {
+  text-decoration: underline;       /* Subraya solo al pasar el ratón */
+}
 
 /* ************************************** Diseño responsivo ****************************************************** */
 @media (max-width: 768px) {
