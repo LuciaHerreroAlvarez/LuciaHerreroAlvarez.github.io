@@ -578,7 +578,7 @@ footer p {
 .footer-icon {
   width: 1.2rem;                    /* Tamaño de los iconos */
   vertical-align: middle;           /* Alineación vertical del icono con el texto */
-  margin-right: 0.5rem;             /* Espacio entre el icono y el texto */
+  margin-right: 0.7rem;             /* Espacio entre el icono y el texto */
 }
 
 /* Estilos para los enlaces del footer */
