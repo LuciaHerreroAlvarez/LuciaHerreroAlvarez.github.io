@@ -258,7 +258,7 @@ nav ul li {
 /* Cuadro de texto sobre la imagen */
 .text-overlay {
     position: absolute;             /* Posiciona el texto encima de la imagen */
-    top: 10%;                       /* Posiciona al centro vertical */
+    top: 50%;                       /* Posiciona al centro vertical */
     right: 5%;                      /* Alineado a la derecha con margen */
     transform: translateY(-50%);    /* Centrado vertical */
     background-color: rgba(255, 255, 255, 0.85); /* Fondo blanco semitransparente */
