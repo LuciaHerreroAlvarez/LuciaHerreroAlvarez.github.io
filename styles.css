@@ -258,19 +258,20 @@ nav ul li {
 /* Cuadro de texto sobre la imagen */
 .text-overlay {
     position: absolute;             /* Posiciona el texto encima de la imagen */
-    top: 10%;                       /* Centrado vertical */
-    right: 10%;                     /* Alineado hacia la derecha con un margen */
-    transform: translateY(-50%);    /* Ajusta para un centrado vertical perfecto */
+    top: 50%;                       /* Posiciona al centro vertical */
+    right: 5%;                      /* Alineado a la derecha con margen */
+    transform: translateY(-50%);    /* Centrado vertical */
     background-color: rgba(255, 255, 255, 0.85); /* Fondo blanco semitransparente */
     padding: 1.2rem 1.5rem;         /* Espaciado interno */
     max-width: 600px;               /* Ancho máximo del cuadro */
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15); /* Sombra suave */
+    text-align: left;               /* Alineación del texto dentro del cuadro */
 }
 
 /* Texto dentro del cuadro */
 .text-overlay p {
     margin: 0;                      /* Sin margen */
-    font-size: 1.1rem;              /* Tamaño de texto ligeramente mayor */
+    font-size: 1.2rem;              /* Tamaño de texto mayor */
     color: #333;                    /* Color de texto oscuro */
     font-weight: 500;               /* Peso de texto para dar énfasis */
     line-height: 1.5;               /* Mejora la legibilidad */
