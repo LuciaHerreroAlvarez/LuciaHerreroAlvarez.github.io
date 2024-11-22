@@ -312,9 +312,13 @@ nav ul li {
   display: flex;
   gap: 2rem;
   margin-top: 5vh;
+  justify-content: space-between;
 }
 
 .project-card {
+  flex: 1;                         /* Las tarjetas ocupan el mismo espacio proporcionalmente */
+  max-width: calc(33.33% - 2rem);  /* Asegura 3 tarjetas por fila con espacio consistente */
+  min-width: 250px; 
   background: #fff;
   border-radius: 0.6rem;
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
