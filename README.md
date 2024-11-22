@@ -1,2 +1,3 @@
 # LuciaHerreroAlvarez.github.io
-First repository for my projects
+This is my personal website
+It is the first portfolio for my data analytics projects
