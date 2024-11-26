@@ -18,6 +18,11 @@ body {
   line-height: 1.6;
 }
 
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #222; /* Cambia este color si deseas que los títulos destaquen más */
+}
+
 h1 {
   font-size: 4rem;
   font-weight: bold;
