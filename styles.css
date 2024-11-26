@@ -24,14 +24,14 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 4rem;
   font-weight: bold;
   letter-spacing: 0.2rem;
   z-index: 3;
 }
 
 h2 {
-  margin-bottom: 1.5rem; /* Ajusta este valor según el espacio que desees */
+  margin-bottom: 2rem; /* Ajusta este valor según el espacio que desees */
 }
 
 p {
