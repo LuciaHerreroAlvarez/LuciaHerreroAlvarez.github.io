@@ -20,7 +20,6 @@ body {
 
 h2, h3 {
   font-family: 'Anton', sans-serif;
-  color: #222; /* Cambia este color si deseas que los títulos destaquen más */
   text-transform: uppercase;
 }
 
